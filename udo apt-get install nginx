@@ -1,0 +1,2517 @@
+-- Logs begin at 일 2016-11-27 11:53:48 KST, end at 일 2016-11-27 14:49:31 KST. --
+11월 27 11:53:48 YEOMC kernel: ata3: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+11월 27 11:53:48 YEOMC kernel: ata4: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+11월 27 11:53:48 YEOMC kernel: [0;1;39mata4.00: supports DRM functions and may not be fully accessible[0m
+11월 27 11:53:48 YEOMC kernel: ata4.00: ATA-10: Crucial_CT525MX300SSD1,  M0CR021, max UDMA/133
+11월 27 11:53:48 YEOMC kernel: ata4.00: 1025610768 sectors, multi 16: LBA48 NCQ (depth 31/32), AA
+11월 27 11:53:48 YEOMC kernel: ata3.00: ATA-10: ADATA SU800, P0801A, max UDMA/133
+11월 27 11:53:48 YEOMC kernel: ata3.00: 1000215216 sectors, multi 2: LBA48 NCQ (depth 31/32), AA
+11월 27 11:53:48 YEOMC kernel: ata3.00: configured for UDMA/133
+11월 27 11:53:48 YEOMC kernel: [0;1;39mata4.00: supports DRM functions and may not be fully accessible[0m
+11월 27 11:53:48 YEOMC kernel: [0;1;39mscsi 2:0:0:0: Direct-Access     ATA      ADATA SU800      1A   PQ: 0 ANSI: 5[0m
+11월 27 11:53:48 YEOMC kernel: [0;1;39msd 2:0:0:0: Attached scsi generic sg0 type 0[0m
+11월 27 11:53:48 YEOMC kernel: [0;1;39msd 2:0:0:0: [sda] 1000215216 512-byte logical blocks: (512 GB/477 GiB)[0m
+11월 27 11:53:48 YEOMC kernel: [0;1;39msd 2:0:0:0: [sda] 4096-byte physical blocks[0m
+11월 27 11:53:48 YEOMC kernel: ata4.00: configured for UDMA/133
+11월 27 11:53:48 YEOMC kernel: [0;1;39msd 2:0:0:0: [sda] Write Protect is off[0m
+11월 27 11:53:48 YEOMC kernel: sd 2:0:0:0: [sda] Mode Sense: 00 3a 00 00
+11월 27 11:53:48 YEOMC kernel: [0;1;39msd 2:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA[0m
+11월 27 11:53:48 YEOMC kernel: [0;1;39mscsi 3:0:0:0: Direct-Access     ATA      Crucial_CT525MX3 R021 PQ: 0 ANSI: 5[0m
+11월 27 11:53:48 YEOMC kernel: [0;1;39msd 3:0:0:0: Attached scsi generic sg1 type 0[0m
+11월 27 11:53:48 YEOMC kernel: ata4.00: Enabling discard_zeroes_data
+11월 27 11:53:48 YEOMC kernel: [0;1;39msd 3:0:0:0: [sdb] 1025610768 512-byte logical blocks: (525 GB/489 GiB)[0m
+11월 27 11:53:48 YEOMC kernel: [0;1;39msd 3:0:0:0: [sdb] Write Protect is off[0m
+11월 27 11:53:48 YEOMC kernel: sd 3:0:0:0: [sdb] Mode Sense: 00 3a 00 00
+11월 27 11:53:48 YEOMC kernel: [0;1;39msd 3:0:0:0: [sdb] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA[0m
+11월 27 11:53:48 YEOMC kernel: ata4.00: Enabling discard_zeroes_data
+11월 27 11:53:48 YEOMC kernel:  sda: sda1 sda2 sda3 sda4
+11월 27 11:53:48 YEOMC kernel:  sdb: sdb1 sdb2 sdb3 sdb4
+11월 27 11:53:48 YEOMC kernel: ata4.00: Enabling discard_zeroes_data
+11월 27 11:53:48 YEOMC kernel: [0;1;39msd 2:0:0:0: [sda] Attached SCSI disk[0m
+11월 27 11:53:48 YEOMC kernel: [0;1;39msd 3:0:0:0: [sdb] Attached SCSI disk[0m
+11월 27 11:53:48 YEOMC kernel: hid-generic 0003:1B1C:1B20.0001: input,hidraw0: USB HID v1.11 Keyboard [Corsair Corsair STRAFE RGB Gaming Keyboard] on usb-0000:00:14.0-6/input0
+11월 27 11:53:48 YEOMC kernel: usb 1-7: new full-speed USB device number 3 using xhci_hcd
+11월 27 11:53:48 YEOMC kernel: usb 1-7: New USB device found, idVendor=046d, idProduct=c07e
+11월 27 11:53:48 YEOMC kernel: usb 1-7: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+11월 27 11:53:48 YEOMC kernel: usb 1-7: Product: Gaming Mouse G402
+11월 27 11:53:48 YEOMC kernel: usb 1-7: Manufacturer: Logitech
+11월 27 11:53:48 YEOMC kernel: usb 1-7: SerialNumber: 6D7848954850
+11월 27 11:53:48 YEOMC kernel: input: Logitech Gaming Mouse G402 as /devices/pci0000:00/0000:00:14.0/usb1/1-7/1-7:1.0/0003:046D:C07E.0003/input/input7
+11월 27 11:53:48 YEOMC kernel: hid-generic 0003:046D:C07E.0003: input,hidraw1: USB HID v1.11 Mouse [Logitech Gaming Mouse G402] on usb-0000:00:14.0-7/input0
+11월 27 11:53:48 YEOMC kernel: input: Logitech Gaming Mouse G402 as /devices/pci0000:00/0000:00:14.0/usb1/1-7/1-7:1.1/0003:046D:C07E.0004/input/input8
+11월 27 11:53:48 YEOMC kernel: hid-generic 0003:046D:C07E.0004: input,hiddev0,hidraw2: USB HID v1.11 Keyboard [Logitech Gaming Mouse G402] on usb-0000:00:14.0-7/input1
+11월 27 11:53:48 YEOMC kernel: tsc: Refined TSC clocksource calibration: 3312.005 MHz
+11월 27 11:53:48 YEOMC kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x2fbd98fbece, max_idle_ns: 440795284924 ns
+11월 27 11:53:48 YEOMC kernel: clocksource: Switched to clocksource tsc
+11월 27 11:53:48 YEOMC kernel: [0;1;31mhid-generic 0003:1B1C:1B20.0002: usb_submit_urb(ctrl) failed: -1[0m
+11월 27 11:53:48 YEOMC kernel: [0;1;39mhid-generic 0003:1B1C:1B20.0002: timeout initializing reports[0m
+11월 27 11:53:48 YEOMC kernel: input: Corsair Corsair STRAFE RGB Gaming Keyboard as /devices/pci0000:00/0000:00:14.0/usb1/1-6/1-6:1.1/0003:1B1C:1B20.0002/input/input9
+11월 27 11:53:48 YEOMC kernel: hid-generic 0003:1B1C:1B20.0002: input,hiddev0,hidraw3: USB HID v1.11 Keyboard [Corsair Corsair STRAFE RGB Gaming Keyboard] on usb-0000:00:14.0-6/input1
+11월 27 11:53:48 YEOMC kernel: EXT4-fs (sda4): mounted filesystem with ordered data mode. Opts: (null)
+11월 27 11:53:48 YEOMC systemd[1]: systemd 229 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ -LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN)
+11월 27 11:53:48 YEOMC systemd[1]: Detected architecture x86-64.
+11월 27 11:53:48 YEOMC systemd[1]: Set hostname to <YEOMC>.
+11월 27 11:53:48 YEOMC systemd[1]: Reached target User and Group Name Lookups.
+11월 27 11:53:48 YEOMC systemd[1]: Created slice User and Session Slice.
+11월 27 11:53:48 YEOMC systemd[1]: Listening on /dev/initctl Compatibility Named Pipe.
+11월 27 11:53:48 YEOMC systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+11월 27 11:53:48 YEOMC systemd[1]: Reached target Encrypted Volumes.
+11월 27 11:53:48 YEOMC systemd[1]: Listening on fsck to fsckd communication Socket.
+11월 27 11:53:48 YEOMC systemd[1]: Listening on udev Kernel Socket.
+11월 27 11:53:48 YEOMC systemd[1]: Listening on Journal Socket.
+11월 27 11:53:48 YEOMC systemd[1]: Listening on udev Control Socket.
+11월 27 11:53:48 YEOMC systemd[1]: Reached target Remote File Systems (Pre).
+11월 27 11:53:48 YEOMC systemd[1]: Reached target Remote File Systems.
+11월 27 11:53:48 YEOMC systemd[1]: Listening on Syslog Socket.
+11월 27 11:53:48 YEOMC systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+11월 27 11:53:48 YEOMC systemd[1]: Listening on Journal Audit Socket.
+11월 27 11:53:48 YEOMC systemd[1]: Listening on Journal Socket (/dev/log).
+11월 27 11:53:48 YEOMC systemd[1]: Created slice System Slice.
+11월 27 11:53:48 YEOMC systemd[1]: Started Read required files in advance.
+11월 27 11:53:48 YEOMC systemd[1]: Mounting Huge Pages File System...
+11월 27 11:53:48 YEOMC systemd[1]: Reached target Slices.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Load Kernel Modules...
+11월 27 11:53:48 YEOMC systemd[1]: Starting Create list of required static device nodes for the current kernel...
+11월 27 11:53:48 YEOMC systemd[1]: Started Braille Device Support.
+11월 27 11:53:48 YEOMC systemd[1]: Mounting Debug File System...
+11월 27 11:53:48 YEOMC systemd[1]: Starting Journal Service...
+11월 27 11:53:48 YEOMC systemd[1]: Starting Uncomplicated firewall...
+11월 27 11:53:48 YEOMC systemd[1]: Created slice system-systemd\x2dfsck.slice.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Set console keymap...
+11월 27 11:53:48 YEOMC systemd[1]: Mounting POSIX Message Queue File System...
+11월 27 11:53:48 YEOMC systemd[1]: Started Create list of required static device nodes for the current kernel.
+11월 27 11:53:48 YEOMC systemd[1]: Started Uncomplicated firewall.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Create Static Device Nodes in /dev...
+11월 27 11:53:48 YEOMC systemd[1]: Mounted Debug File System.
+11월 27 11:53:48 YEOMC systemd[1]: Mounted POSIX Message Queue File System.
+11월 27 11:53:48 YEOMC systemd[1]: Mounted Huge Pages File System.
+11월 27 11:53:48 YEOMC kernel: lp: driver loaded but no devices found
+11월 27 11:53:48 YEOMC kernel: ppdev: user-space parallel port driver
+11월 27 11:53:48 YEOMC kernel: parport_pc 00:01: reported by Plug and Play ACPI
+11월 27 11:53:48 YEOMC kernel: parport0: PC-style at 0x378, irq 5 [PCSPP]
+11월 27 11:53:48 YEOMC systemd-journald[235]: Journal started
+-- Subject: The journal has been started
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- The system journal process has started up, opened the journal
+-- files for writing and is now ready to process requests.
+11월 27 11:53:48 YEOMC systemd-modules-load[228]: Inserted module 'lp'
+11월 27 11:53:48 YEOMC systemd[1]: Started Journal Service.
+11월 27 11:53:48 YEOMC systemd-modules-load[228]: Inserted module 'ppdev'
+11월 27 11:53:48 YEOMC systemd[1]: Started Create Static Device Nodes in /dev.
+-- Subject: Unit systemd-tmpfiles-setup-dev.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-tmpfiles-setup-dev.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC loadkeys[239]: Loading /etc/console-setup/cached.kmap.gz
+11월 27 11:53:48 YEOMC systemd[1]: Starting udev Kernel Device Manager...
+-- Subject: Unit systemd-udevd.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-udevd.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Started Set console keymap.
+-- Subject: Unit keyboard-setup.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit keyboard-setup.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Started udev Kernel Device Manager.
+-- Subject: Unit systemd-udevd.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-udevd.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Remount Root and Kernel File Systems...
+-- Subject: Unit systemd-remount-fs.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-remount-fs.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Started Remount Root and Kernel File Systems.
+-- Subject: Unit systemd-remount-fs.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-remount-fs.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Flush Journal to Persistent Storage...
+-- Subject: Unit systemd-journal-flush.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-journal-flush.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Load/Save Random Seed...
+-- Subject: Unit systemd-random-seed.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-random-seed.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Starting udev Coldplug all Devices...
+-- Subject: Unit systemd-udev-trigger.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-udev-trigger.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Reached target Local File Systems (Pre).
+-- Subject: Unit local-fs-pre.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit local-fs-pre.target has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC kernel: EXT4-fs (sda4): re-mounted. Opts: errors=remount-ro
+11월 27 11:53:48 YEOMC systemd[1]: Started Load/Save Random Seed.
+-- Subject: Unit systemd-random-seed.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-random-seed.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Started Flush Journal to Persistent Storage.
+-- Subject: Unit systemd-journal-flush.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-journal-flush.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC kernel: lp0: using parport0 (interrupt-driven).
+11월 27 11:53:48 YEOMC systemd-modules-load[228]: Inserted module 'parport_pc'
+11월 27 11:53:48 YEOMC kernel: wmi: Mapper loaded
+11월 27 11:53:48 YEOMC systemd[1]: Started Braille Device Support.
+-- Subject: Unit brltty.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit brltty.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Started Load Kernel Modules.
+-- Subject: Unit systemd-modules-load.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-modules-load.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Started udev Coldplug all Devices.
+-- Subject: Unit systemd-udev-trigger.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-udev-trigger.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Show Plymouth Boot Screen...
+-- Subject: Unit plymouth-start.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit plymouth-start.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Mounting FUSE Control File System...
+-- Subject: Unit sys-fs-fuse-connections.mount has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit sys-fs-fuse-connections.mount has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Apply Kernel Variables...
+-- Subject: Unit systemd-sysctl.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-sysctl.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Mounted FUSE Control File System.
+-- Subject: Unit sys-fs-fuse-connections.mount has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit sys-fs-fuse-connections.mount has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Started Apply Kernel Variables.
+-- Subject: Unit systemd-sysctl.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-sysctl.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC kernel: Bluetooth: Core ver 2.21
+11월 27 11:53:48 YEOMC kernel: NET: Registered protocol family 31
+11월 27 11:53:48 YEOMC kernel: Bluetooth: HCI device and connection manager initialized
+11월 27 11:53:48 YEOMC kernel: Bluetooth: HCI socket layer initialized
+11월 27 11:53:48 YEOMC kernel: Bluetooth: L2CAP socket layer initialized
+11월 27 11:53:48 YEOMC kernel: Bluetooth: SCO socket layer initialized
+11월 27 11:53:48 YEOMC kernel: Bluetooth: HCI UART driver ver 2.3
+11월 27 11:53:48 YEOMC kernel: Bluetooth: HCI UART protocol H4 registered
+11월 27 11:53:48 YEOMC kernel: Bluetooth: HCI UART protocol BCSP registered
+11월 27 11:53:48 YEOMC kernel: Bluetooth: HCI UART protocol LL registered
+11월 27 11:53:48 YEOMC kernel: Bluetooth: HCI UART protocol ATH3K registered
+11월 27 11:53:48 YEOMC kernel: Bluetooth: HCI UART protocol Three-wire (H5) registered
+11월 27 11:53:48 YEOMC kernel: Bluetooth: HCI UART protocol Intel registered
+11월 27 11:53:48 YEOMC kernel: Bluetooth: HCI UART protocol BCM registered
+11월 27 11:53:48 YEOMC kernel: Bluetooth: HCI UART protocol QCA registered
+11월 27 11:53:48 YEOMC kernel: mei_me 0000:00:16.0: enabling device (0000 -> 0002)
+11월 27 11:53:48 YEOMC kernel: shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+11월 27 11:53:48 YEOMC systemd[1]: Started Show Plymouth Boot Screen.
+-- Subject: Unit plymouth-start.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit plymouth-start.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Started Forward Password Requests to Plymouth Directory Watch.
+-- Subject: Unit systemd-ask-password-plymouth.path has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-ask-password-plymouth.path has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC mtp-probe[330]: checking bus 1, device 3: "/sys/devices/pci0000:00/0000:00:14.0/usb1/1-7"
+11월 27 11:53:48 YEOMC mtp-probe[324]: checking bus 1, device 2: "/sys/devices/pci0000:00/0000:00:14.0/usb1/1-6"
+11월 27 11:53:48 YEOMC mtp-probe[324]: bus: 1, device: 2 was not an MTP device
+11월 27 11:53:48 YEOMC mtp-probe[330]: bus: 1, device: 3 was not an MTP device
+11월 27 11:53:48 YEOMC kernel: AVX2 version of gcm_enc/dec engaged.
+11월 27 11:53:48 YEOMC kernel: AES CTR mode by8 optimization enabled
+11월 27 11:53:48 YEOMC systemd-udevd[288]: [0;1;39mProcess '/lib/udev/hdparm' failed with exit code 5.[0m
+11월 27 11:53:48 YEOMC kernel: [0;1;39mrandom: nonblocking pool is initialized[0m
+11월 27 11:53:48 YEOMC kernel: snd_hda_intel 0000:01:00.1: Disabling MSI
+11월 27 11:53:48 YEOMC kernel: snd_hda_intel 0000:01:00.1: Handle vga_switcheroo audio client
+11월 27 11:53:48 YEOMC systemd[1]: Found device ADATA_SU800 2.
+-- Subject: Unit dev-disk-by\x2duuid-52d813a5\x2d305f\x2d4016\x2db03c\x2d3a1c4f7c6b37.device has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit dev-disk-by\x2duuid-52d813a5\x2d305f\x2d4016\x2db03c\x2d3a1c4f7c6b37.device has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Found device ADATA_SU800 2.
+-- Subject: Unit dev-sda2.device has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit dev-sda2.device has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC kernel: intel_rapl: Found RAPL domain package
+11월 27 11:53:48 YEOMC kernel: intel_rapl: Found RAPL domain core
+11월 27 11:53:48 YEOMC kernel: intel_rapl: Found RAPL domain dram
+11월 27 11:53:48 YEOMC kernel: [0;1;31msnd_hda_intel 0000:00:1f.3: failed to add i915_bpo component master (-19)[0m
+11월 27 11:53:48 YEOMC systemd[1]: Activating swap Swap Partition...
+-- Subject: Unit dev-sda2.swap has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit dev-sda2.swap has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Found device ADATA_SU800 EFI\x20System\x20Partition.
+-- Subject: Unit dev-disk-by\x2duuid-92A7\x2dEB16.device has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit dev-disk-by\x2duuid-92A7\x2dEB16.device has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+-- Subject: Unit systemd-rfkill.socket has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-rfkill.socket has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Starting File System Check on /dev/disk/by-uuid/92A7-EB16...
+-- Subject: Unit systemd-fsck@dev-disk-by\x2duuid-92A7\x2dEB16.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-fsck@dev-disk-by\x2duuid-92A7\x2dEB16.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Started Braille Device Support.
+-- Subject: Unit brltty.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit brltty.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC kernel: snd_hda_codec_realtek hdaudioC0D0: autoconfig for ALC887-VD: line_outs=1 (0x14/0x0/0x0/0x0/0x0) type:line
+11월 27 11:53:48 YEOMC kernel: snd_hda_codec_realtek hdaudioC0D0:    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)
+11월 27 11:53:48 YEOMC kernel: snd_hda_codec_realtek hdaudioC0D0:    hp_outs=1 (0x1b/0x0/0x0/0x0/0x0)
+11월 27 11:53:48 YEOMC kernel: snd_hda_codec_realtek hdaudioC0D0:    mono: mono_out=0x0
+11월 27 11:53:48 YEOMC kernel: snd_hda_codec_realtek hdaudioC0D0:    dig-out=0x11/0x0
+11월 27 11:53:48 YEOMC kernel: snd_hda_codec_realtek hdaudioC0D0:    inputs:
+11월 27 11:53:48 YEOMC kernel: snd_hda_codec_realtek hdaudioC0D0:      Front Mic=0x19
+11월 27 11:53:48 YEOMC kernel: snd_hda_codec_realtek hdaudioC0D0:      Rear Mic=0x18
+11월 27 11:53:48 YEOMC kernel: snd_hda_codec_realtek hdaudioC0D0:      Line=0x1a
+11월 27 11:53:48 YEOMC kernel: asus_wmi: ASUS WMI generic driver loaded
+11월 27 11:53:48 YEOMC kernel: asus_wmi: Initialization: 0x0
+11월 27 11:53:48 YEOMC kernel: asus_wmi: BIOS WMI version: 0.9
+11월 27 11:53:48 YEOMC kernel: asus_wmi: SFUN value: 0x0
+11월 27 11:53:48 YEOMC kernel: input: Eee PC WMI hotkeys as /devices/platform/eeepc-wmi/input/input10
+11월 27 11:53:48 YEOMC kernel: asus_wmi: Number of fans: 1
+11월 27 11:53:48 YEOMC systemd[1]: Started File System Check Daemon to report status.
+-- Subject: Unit systemd-fsckd.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-fsckd.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC kernel: Adding 1999868k swap on /dev/sda2.  Priority:-1 extents:1 across:1999868k SSFS
+11월 27 11:53:48 YEOMC kernel: input: HDA Intel PCH Front Mic as /devices/pci0000:00/0000:00:1f.3/sound/card0/input11
+11월 27 11:53:48 YEOMC systemd[1]: Activated swap Swap Partition.
+-- Subject: Unit dev-sda2.swap has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit dev-sda2.swap has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Activated swap /dev/disk/by-uuid/52d813a5-305f-4016-b03c-3a1c4f7c6b37.
+-- Subject: Unit dev-disk-by\x2duuid-52d813a5\x2d305f\x2d4016\x2db03c\x2d3a1c4f7c6b37.swap has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit dev-disk-by\x2duuid-52d813a5\x2d305f\x2d4016\x2db03c\x2d3a1c4f7c6b37.swap has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Reached target Swap.
+-- Subject: Unit swap.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit swap.target has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Reached target Sound Card.
+-- Subject: Unit sound.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit sound.target has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC kernel: input: HDA Intel PCH Rear Mic as /devices/pci0000:00/0000:00:1f.3/sound/card0/input12
+11월 27 11:53:48 YEOMC kernel: input: HDA Intel PCH Line as /devices/pci0000:00/0000:00:1f.3/sound/card0/input13
+11월 27 11:53:48 YEOMC kernel: input: HDA Intel PCH Line Out as /devices/pci0000:00/0000:00:1f.3/sound/card0/input14
+11월 27 11:53:48 YEOMC kernel: input: HDA Intel PCH Front Headphone as /devices/pci0000:00/0000:00:1f.3/sound/card0/input15
+11월 27 11:53:48 YEOMC systemd-fsck[415]: fsck.fat 3.0.28 (2015-05-16)
+11월 27 11:53:48 YEOMC systemd-fsck[415]: /dev/sda1: 8 files, 917/130812 clusters
+11월 27 11:53:48 YEOMC systemd[1]: Started File System Check on /dev/disk/by-uuid/92A7-EB16.
+-- Subject: Unit systemd-fsck@dev-disk-by\x2duuid-92A7\x2dEB16.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-fsck@dev-disk-by\x2duuid-92A7\x2dEB16.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Mounting /boot/efi...
+-- Subject: Unit boot-efi.mount has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit boot-efi.mount has begun starting up.
+11월 27 11:53:48 YEOMC kernel: nvidia-uvm: Loaded the UVM driver in 8 mode, major device number 243
+11월 27 11:53:48 YEOMC systemd[1]: Mounted /boot/efi.
+-- Subject: Unit boot-efi.mount has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit boot-efi.mount has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Reached target Local File Systems.
+-- Subject: Unit local-fs.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit local-fs.target has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Create Volatile Files and Directories...
+-- Subject: Unit systemd-tmpfiles-setup.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-tmpfiles-setup.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Tell Plymouth To Write Out Runtime Data...
+-- Subject: Unit plymouth-read-write.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit plymouth-read-write.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Clean up any mess left by 0dns-up...
+-- Subject: Unit dns-clean.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit dns-clean.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd-tmpfiles[484]: [0;1;39m[/usr/lib/tmpfiles.d/var.conf:14] Duplicate line for path "/var/log", ignoring.[0m
+11월 27 11:53:48 YEOMC systemd[1]: Starting Run snappy firstboot setup...
+-- Subject: Unit snapd.firstboot.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit snapd.firstboot.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Set console font and keymap...
+-- Subject: Unit console-setup.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit console-setup.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Starting LSB: AppArmor initialization...
+-- Subject: Unit apparmor.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit apparmor.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Started Clean up any mess left by 0dns-up.
+-- Subject: Unit dns-clean.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit dns-clean.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Started Tell Plymouth To Write Out Runtime Data.
+-- Subject: Unit plymouth-read-write.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit plymouth-read-write.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC apparmor[494]:  * Starting AppArmor profiles
+11월 27 11:53:48 YEOMC systemd[1]: Started Braille Device Support.
+-- Subject: Unit brltty.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit brltty.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Tell Plymouth To Write Out Runtime Data...
+-- Subject: Unit plymouth-read-write.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit plymouth-read-write.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Nameserver information manager...
+-- Subject: Unit resolvconf.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit resolvconf.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Started Nameserver information manager.
+-- Subject: Unit resolvconf.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit resolvconf.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Started Tell Plymouth To Write Out Runtime Data.
+-- Subject: Unit plymouth-read-write.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit plymouth-read-write.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Started Create Volatile Files and Directories.
+-- Subject: Unit systemd-tmpfiles-setup.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-tmpfiles-setup.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Network Time Synchronization...
+-- Subject: Unit systemd-timesyncd.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-timesyncd.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Update UTMP about System Boot/Shutdown...
+-- Subject: Unit systemd-update-utmp.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-update-utmp.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Started Network Time Synchronization.
+-- Subject: Unit systemd-timesyncd.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-timesyncd.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Reached target System Time Synchronized.
+-- Subject: Unit time-sync.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit time-sync.target has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Started Set console font and keymap.
+-- Subject: Unit console-setup.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit console-setup.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Started Update UTMP about System Boot/Shutdown.
+-- Subject: Unit systemd-update-utmp.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-update-utmp.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Created slice system-getty.slice.
+-- Subject: Unit system-getty.slice has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit system-getty.slice has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC apparmor[494]: Skipping profile in /etc/apparmor.d/disable: usr.bin.firefox
+11월 27 11:53:48 YEOMC audit[644]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/lightdm/lightdm-guest-session" pid=644 comm="apparmor_parser"
+11월 27 11:53:48 YEOMC audit[644]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/lightdm/lightdm-guest-session//chromium" pid=644 comm="apparmor_parser"
+11월 27 11:53:48 YEOMC audit[645]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=645 comm="apparmor_parser"
+11월 27 11:53:48 YEOMC audit[645]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=645 comm="apparmor_parser"
+11월 27 11:53:48 YEOMC audit[645]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=645 comm="apparmor_parser"
+11월 27 11:53:48 YEOMC audit[645]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=645 comm="apparmor_parser"
+11월 27 11:53:48 YEOMC kernel: [0;1;39maudit: type=1400 audit(1480215228.765:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/lightdm/lightdm-guest-session" pid=644 comm="apparmor_parser"[0m
+11월 27 11:53:48 YEOMC kernel: [0;1;39maudit: type=1400 audit(1480215228.765:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/lightdm/lightdm-guest-session//chromium" pid=644 comm="apparmor_parser"[0m
+11월 27 11:53:48 YEOMC kernel: [0;1;39maudit: type=1400 audit(1480215228.765:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=645 comm="apparmor_parser"[0m
+11월 27 11:53:48 YEOMC kernel: [0;1;39maudit: type=1400 audit(1480215228.765:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=645 comm="apparmor_parser"[0m
+11월 27 11:53:48 YEOMC kernel: [0;1;39maudit: type=1400 audit(1480215228.765:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=645 comm="apparmor_parser"[0m
+11월 27 11:53:48 YEOMC kernel: [0;1;39maudit: type=1400 audit(1480215228.765:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=645 comm="apparmor_parser"[0m
+11월 27 11:53:48 YEOMC audit[649]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=649 comm="apparmor_parser"
+11월 27 11:53:48 YEOMC audit[649]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=649 comm="apparmor_parser"
+11월 27 11:53:48 YEOMC audit[650]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/cups-browsed" pid=650 comm="apparmor_parser"
+11월 27 11:53:48 YEOMC audit[652]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/ippusbxd" pid=652 comm="apparmor_parser"
+11월 27 11:53:48 YEOMC apparmor[494]: Skipping profile in /etc/apparmor.d/disable: usr.sbin.rsyslogd
+11월 27 11:53:48 YEOMC audit[651]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/cups/backend/cups-pdf" pid=651 comm="apparmor_parser"
+11월 27 11:53:48 YEOMC audit[651]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/cupsd" pid=651 comm="apparmor_parser"
+11월 27 11:53:48 YEOMC audit[651]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/cupsd//third_party" pid=651 comm="apparmor_parser"
+11월 27 11:53:48 YEOMC audit[655]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/tcpdump" pid=655 comm="apparmor_parser"
+11월 27 11:53:48 YEOMC kernel: [0;1;39maudit: type=1400 audit(1480215228.769:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=649 comm="apparmor_parser"[0m
+11월 27 11:53:48 YEOMC kernel: [0;1;39maudit: type=1400 audit(1480215228.769:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=649 comm="apparmor_parser"[0m
+11월 27 11:53:48 YEOMC kernel: [0;1;39maudit: type=1400 audit(1480215228.769:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/cups-browsed" pid=650 comm="apparmor_parser"[0m
+11월 27 11:53:48 YEOMC kernel: [0;1;39maudit: type=1400 audit(1480215228.769:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/ippusbxd" pid=652 comm="apparmor_parser"[0m
+11월 27 11:53:48 YEOMC audit[646]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince" pid=646 comm="apparmor_parser"
+11월 27 11:53:48 YEOMC audit[646]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince//sanitized_helper" pid=646 comm="apparmor_parser"
+11월 27 11:53:48 YEOMC audit[646]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince-previewer" pid=646 comm="apparmor_parser"
+11월 27 11:53:48 YEOMC audit[646]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince-previewer//sanitized_helper" pid=646 comm="apparmor_parser"
+11월 27 11:53:48 YEOMC audit[646]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince-thumbnailer" pid=646 comm="apparmor_parser"
+11월 27 11:53:48 YEOMC audit[646]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince-thumbnailer//sanitized_helper" pid=646 comm="apparmor_parser"
+11월 27 11:53:48 YEOMC audit[648]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="webbrowser-app" pid=648 comm="apparmor_parser"
+11월 27 11:53:48 YEOMC audit[648]: AVC apparmor="STATUS" operation="profile_load" profile="unconfined" name="webbrowser-app//oxide_helper" pid=648 comm="apparmor_parser"
+11월 27 11:53:48 YEOMC apparmor[494]:    ...done.
+11월 27 11:53:48 YEOMC systemd[1]: Started LSB: AppArmor initialization.
+-- Subject: Unit apparmor.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit apparmor.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Reached target System Initialization.
+-- Subject: Unit sysinit.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit sysinit.target has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Listening on Avahi mDNS/DNS-SD Stack Activation Socket.
+-- Subject: Unit avahi-daemon.socket has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit avahi-daemon.socket has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Listening on CUPS Scheduler.
+-- Subject: Unit cups.socket has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups.socket has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Started Trigger resolvconf update for networkd DNS.
+-- Subject: Unit systemd-networkd-resolvconf-update.path has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-networkd-resolvconf-update.path has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Listening on ACPID Listen Socket.
+-- Subject: Unit acpid.socket has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit acpid.socket has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: snapd.refresh.timer: Adding 32min 20.144972s random time.
+11월 27 11:53:48 YEOMC systemd[1]: snapd.refresh.timer: Adding 5h 24min 23.446092s random time.
+11월 27 11:53:48 YEOMC systemd[1]: Started Timer to automatically refresh installed snaps.
+-- Subject: Unit snapd.refresh.timer has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit snapd.refresh.timer has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: apt-daily.timer: Adding 4h 34min 29.405938s random time.
+11월 27 11:53:48 YEOMC systemd[1]: Started Daily apt activities.
+-- Subject: Unit apt-daily.timer has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit apt-daily.timer has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Listening on D-Bus System Message Bus Socket.
+-- Subject: Unit dbus.socket has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit dbus.socket has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Started CUPS Scheduler.
+-- Subject: Unit cups.path has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups.path has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Started Daily Cleanup of Temporary Directories.
+-- Subject: Unit systemd-tmpfiles-clean.timer has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-tmpfiles-clean.timer has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Reached target Timers.
+-- Subject: Unit timers.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit timers.target has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Listening on UUID daemon activation socket.
+-- Subject: Unit uuidd.socket has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit uuidd.socket has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Started ACPI Events Check.
+-- Subject: Unit acpid.path has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit acpid.path has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Reached target Paths.
+-- Subject: Unit paths.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit paths.target has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Socket activation for snappy daemon.
+-- Subject: Unit snapd.socket has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit snapd.socket has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Raise network interfaces...
+-- Subject: Unit networking.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit networking.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Listening on Socket activation for snappy daemon.
+-- Subject: Unit snapd.socket has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit snapd.socket has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Reached target Sockets.
+-- Subject: Unit sockets.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit sockets.target has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Reached target Basic System.
+-- Subject: Unit basic.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit basic.target has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Started Run anacron jobs.
+-- Subject: Unit anacron.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit anacron.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Modem Manager...
+-- Subject: Unit ModemManager.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ModemManager.service has begun starting up.
+11월 27 11:53:48 YEOMC anacron[663]: [0;1;39mAnacron 2.3 started on 2016-11-27[0m
+11월 27 11:53:48 YEOMC systemd[1]: Started D-Bus System Message Bus.
+-- Subject: Unit dbus.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit dbus.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC anacron[663]: [0;1;39mNormal exit (0 jobs run)[0m
+11월 27 11:53:48 YEOMC dbus[669]: [0;1;39m[system] AppArmor D-Bus mediation is enabled[0m
+11월 27 11:53:48 YEOMC systemd[1]: Starting NVIDIA Persistence Daemon...
+-- Subject: Unit nvidia-persistenced.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit nvidia-persistenced.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Starting LSB: automatic crash report generation...
+-- Subject: Unit apport.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit apport.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Starting System Logging Service...
+-- Subject: Unit rsyslog.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit rsyslog.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Started crash report submission daemon.
+-- Subject: Unit whoopsie.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit whoopsie.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Starting LSB: Speech Dispatcher...
+-- Subject: Unit speech-dispatcher.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit speech-dispatcher.service has begun starting up.
+11월 27 11:53:48 YEOMC cron[681]: (CRON) INFO (pidfile fd = 3)
+11월 27 11:53:48 YEOMC systemd[1]: Starting LSB: Set the CPU Frequency Scaling governor to "ondemand"...
+-- Subject: Unit ondemand.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ondemand.service has begun starting up.
+11월 27 11:53:48 YEOMC nvidia-persistenced[693]: Verbose syslog connection opened
+11월 27 11:53:48 YEOMC systemd[1]: Started Regular background program processing daemon.
+-- Subject: Unit cron.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cron.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC nvidia-persistenced[693]: Now running with user ID 121 and group ID 129
+11월 27 11:53:48 YEOMC systemd[1]: Starting Permit User Sessions...
+-- Subject: Unit systemd-user-sessions.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-user-sessions.service has begun starting up.
+11월 27 11:53:48 YEOMC nvidia-persistenced[693]: [0;1;39mStarted (693)[0m
+11월 27 11:53:48 YEOMC systemd[1]: Started CUPS Scheduler.
+-- Subject: Unit cups.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC cron[681]: (CRON) INFO (Running @reboot jobs)
+11월 27 11:53:48 YEOMC systemd[1]: Reached target Printer.
+-- Subject: Unit printer.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit printer.target has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Detect the available GPUs and deal with any system changes...
+-- Subject: Unit gpu-manager.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit gpu-manager.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Login Service...
+-- Subject: Unit systemd-logind.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-logind.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Save/Restore Sound Card State...
+-- Subject: Unit alsa-restore.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit alsa-restore.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Thermal Daemon Service...
+-- Subject: Unit thermald.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit thermald.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Accounts Service...
+-- Subject: Unit accounts-daemon.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit accounts-daemon.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Starting LSB: Record successful boot for GRUB...
+-- Subject: Unit grub-common.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit grub-common.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Starting LSB: daemon to balance interrupts for SMP systems...
+-- Subject: Unit irqbalance.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit irqbalance.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Restore /etc/resolv.conf if the system crashed before the ppp link was shut down...
+-- Subject: Unit pppd-dns.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit pppd-dns.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Avahi mDNS/DNS-SD Stack...
+-- Subject: Unit avahi-daemon.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit avahi-daemon.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Started ACPI event daemon.
+-- Subject: Unit acpid.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit acpid.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Network Manager...
+-- Subject: Unit NetworkManager.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit NetworkManager.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Started System Logging Service.
+-- Subject: Unit rsyslog.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit rsyslog.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Started NVIDIA Persistence Daemon.
+-- Subject: Unit nvidia-persistenced.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit nvidia-persistenced.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Started Permit User Sessions.
+-- Subject: Unit systemd-user-sessions.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-user-sessions.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Started Restore /etc/resolv.conf if the system crashed before the ppp link was shut down.
+-- Subject: Unit pppd-dns.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit pppd-dns.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC gpu-manager[686]: /etc/modprobe.d is not a file
+11월 27 11:53:48 YEOMC systemd[1]: Started Save/Restore Sound Card State.
+-- Subject: Unit alsa-restore.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit alsa-restore.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC gpu-manager[686]: /etc/modprobe.d is not a file
+11월 27 11:53:48 YEOMC gpu-manager[686]: /etc/modprobe.d is not a file
+11월 27 11:53:48 YEOMC gpu-manager[686]: /etc/modprobe.d is not a file
+11월 27 11:53:48 YEOMC gpu-manager[686]: /etc/modprobe.d is not a file
+11월 27 11:53:48 YEOMC ModemManager[667]: <info>  ModemManager (version 1.4.12) starting in system bus...
+11월 27 11:53:48 YEOMC systemd[1]: Started LSB: Set the CPU Frequency Scaling governor to "ondemand".
+-- Subject: Unit ondemand.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ondemand.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC speech-dispatcher[679]:  * speech-dispatcher disabled; edit /etc/default/speech-dispatcher
+11월 27 11:53:48 YEOMC apport[673]:  * Starting automatic crash report generation: apport
+11월 27 11:53:48 YEOMC systemd[1]: Started LSB: Speech Dispatcher.
+-- Subject: Unit speech-dispatcher.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit speech-dispatcher.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC apport[673]:    ...done.
+11월 27 11:53:48 YEOMC avahi-daemon[701]: Found user 'avahi' (UID 111) and group 'avahi' (GID 120).
+11월 27 11:53:48 YEOMC avahi-daemon[701]: Successfully dropped root privileges.
+11월 27 11:53:48 YEOMC avahi-daemon[701]: avahi-daemon 0.6.32-rc starting up.
+11월 27 11:53:48 YEOMC avahi-daemon[701]: Successfully called chroot().
+11월 27 11:53:48 YEOMC avahi-daemon[701]: Successfully dropped remaining capabilities.
+11월 27 11:53:48 YEOMC avahi-daemon[701]: No service file found in /etc/avahi/services.
+11월 27 11:53:48 YEOMC gpu-manager[686]: update-alternatives: error: no alternatives for x86_64-linux-gnu_gfxcore_conf
+11월 27 11:53:48 YEOMC avahi-daemon[701]: Network interface enumeration completed.
+11월 27 11:53:48 YEOMC avahi-daemon[701]: Server startup complete. Host name is YEOMC.local. Local service cookie is 3643470309.
+11월 27 11:53:48 YEOMC systemd[1]: Started Run snappy firstboot setup.
+-- Subject: Unit snapd.firstboot.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit snapd.firstboot.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC thermald[689]: 22 CPUID levels; family:model:stepping 0x6:5e:3 (6:94:3)
+11월 27 11:53:48 YEOMC thermald[689]: Polling mode is enabled: 4
+11월 27 11:53:48 YEOMC systemd[1]: Started LSB: automatic crash report generation.
+-- Subject: Unit apport.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit apport.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Started Detect the available GPUs and deal with any system changes.
+-- Subject: Unit gpu-manager.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit gpu-manager.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC dbus[669]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.PolicyKit1' unit='polkitd.service'[0m
+11월 27 11:53:48 YEOMC thermald[689]: sysfs read failed constraint_0_max_power_uw
+11월 27 11:53:48 YEOMC thermald[689]: sysfs write failed trip_point_0_temp
+11월 27 11:53:48 YEOMC thermald[689]: sysfs write failed trip_point_0_temp
+11월 27 11:53:48 YEOMC systemd[1]: Started LSB: Record successful boot for GRUB.
+-- Subject: Unit grub-common.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit grub-common.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.8847] NetworkManager (version 1.2.2) is starting...
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.8848] Read config: /etc/NetworkManager/NetworkManager.conf (etc: default-wifi-powersave-on.conf)
+11월 27 11:53:48 YEOMC irqbalance[699]:  * Starting SMP IRQ Balancer: irqbalance
+11월 27 11:53:48 YEOMC irqbalance[699]:    ...done.
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.8893] manager[0xa0c1a0]: monitoring kernel firmware directory '/lib/firmware'.
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.8893] monitoring ifupdown state file '/run/network/ifstate'.
+11월 27 11:53:48 YEOMC systemd[1]: Started LSB: daemon to balance interrupts for SMP systems.
+-- Subject: Unit irqbalance.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit irqbalance.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.8925] dns-mgr[0xa210b0]: set resolv-conf-mode: dnsmasq, plugin="dnsmasq"
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.8925] dns-mgr[0xa210b0]: using resolv.conf manager 'resolvconf'
+11월 27 11:53:48 YEOMC dbus[669]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service'[0m
+11월 27 11:53:48 YEOMC whoopsie[676]: [11:53:48] Using lock path: /var/lock/whoopsie/lock
+11월 27 11:53:48 YEOMC systemd[1]: Started Avahi mDNS/DNS-SD Stack.
+-- Subject: Unit avahi-daemon.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit avahi-daemon.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd-logind[687]: New seat seat0.
+-- Subject: A new seat seat0 is now available
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- Documentation: http://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A new seat seat0 has been configured and is now available.
+11월 27 11:53:48 YEOMC systemd-logind[687]: Watching system buttons on /dev/input/event2 (Power Button)
+11월 27 11:53:48 YEOMC systemd-logind[687]: Watching system buttons on /dev/input/event1 (Power Button)
+11월 27 11:53:48 YEOMC systemd-logind[687]: Watching system buttons on /dev/input/event0 (Sleep Button)
+11월 27 11:53:48 YEOMC systemd-logind[687]: Watching system buttons on /dev/input/event7 (Eee PC WMI hotkeys)
+11월 27 11:53:48 YEOMC systemd[1]: Started Thermal Daemon Service.
+-- Subject: Unit thermald.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit thermald.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Started Network Manager.
+-- Subject: Unit NetworkManager.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit NetworkManager.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Started Login Service.
+-- Subject: Unit systemd-logind.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-logind.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Network Manager Script Dispatcher Service...
+-- Subject: Unit NetworkManager-dispatcher.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit NetworkManager-dispatcher.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Network Manager Wait Online...
+-- Subject: Unit NetworkManager-wait-online.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit NetworkManager-wait-online.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Authenticate and Authorize Users to Run Privileged Tasks...
+-- Subject: Unit polkitd.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit polkitd.service has begun starting up.
+11월 27 11:53:48 YEOMC systemd[1]: Started Make remote CUPS printers available locally.
+-- Subject: Unit cups-browsed.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups-browsed.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Started Snappy daemon.
+-- Subject: Unit snapd.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit snapd.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Starting Light Display Manager...
+-- Subject: Unit lightdm.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit lightdm.service has begun starting up.
+11월 27 11:53:48 YEOMC dbus[669]: [0;1;39m[system] Successfully activated service 'org.freedesktop.nm_dispatcher'[0m
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9247] init!
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9247]       interface-parser: parsing file /etc/network/interfaces
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9248]       interface-parser: finished parsing file /etc/network/interfaces
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9248] management mode: unmanaged
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9250] devices added (path: /sys/devices/pci0000:00/0000:00:1c.0/0000:02:00.0/net/enp2s0, iface: enp2s0)
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9250] device added (path: /sys/devices/pci0000:00/0000:00:1c.0/0000:02:00.0/net/enp2s0, iface: enp2s0): no ifupdown configuration found.
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9250] devices added (path: /sys/devices/virtual/net/lo, iface: lo)
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9250] device added (path: /sys/devices/virtual/net/lo, iface: lo): no ifupdown configuration found.
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9250] end _init.
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9250] settings: loaded plugin ifupdown: (C) 2008 Canonical Ltd.  To report bugs please use the NetworkManager mailing list. (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-settings-plugin-ifupdown.so)
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9250] settings: loaded plugin keyfile: (c) 2007 - 2015 Red Hat, Inc.  To report bugs please use the NetworkManager mailing list.
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9251] SettingsPlugin-Ofono: init!
+11월 27 11:53:48 YEOMC NetworkManager[706]: [0;1;39m<warn>  [1480215228.9251] SettingsPlugin-Ofono: file doesn't exist: /var/lib/ofono[0m
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9251] SettingsPlugin-Ofono: end _init.
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9251] settings: loaded plugin ofono: (C) 2013-2016 Canonical Ltd.  To report bugs please use the NetworkManager mailing list. (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-settings-plugin-ofono.so)
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9251] (10631296) ... get_connections.
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9252] (10631296) ... get_connections (managed=false): return empty list.
+11월 27 11:53:48 YEOMC systemd[1]: Started Network Manager Script Dispatcher Service.
+-- Subject: Unit NetworkManager-dispatcher.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit NetworkManager-dispatcher.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9264] SettingsPlugin-Ofono: (10631456) ... get_connections.
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9264] SettingsPlugin-Ofono: (10631456) connections count: 0
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9265] get unmanaged devices count: 0
+11월 27 11:53:48 YEOMC dbus[669]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service'[0m
+11월 27 11:53:48 YEOMC systemd[1]: Starting Hostname Service...
+-- Subject: Unit systemd-hostnamed.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-hostnamed.service has begun starting up.
+11월 27 11:53:48 YEOMC dbus[669]: [0;1;39m[system] Successfully activated service 'org.freedesktop.hostname1'[0m
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9404] settings: hostname: using hostnamed
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9405] settings: hostname changed from (none) to "YEOMC"
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9406] Using DHCP client 'dhclient'
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9406] manager: WiFi enabled by radio killswitch; enabled by state file
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9406] manager: WWAN enabled by radio killswitch; enabled by state file
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9406] manager: Networking is enabled by state file
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9406] Loaded device plugin: NMVxlanFactory (internal)
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9406] Loaded device plugin: NMVlanFactory (internal)
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9407] Loaded device plugin: NMVethFactory (internal)
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9407] Loaded device plugin: NMTunFactory (internal)
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9407] Loaded device plugin: NMMacvlanFactory (internal)
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9407] Loaded device plugin: NMIPTunnelFactory (internal)
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9407] Loaded device plugin: NMInfinibandFactory (internal)
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9407] Loaded device plugin: NMEthernetFactory (internal)
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9407] Loaded device plugin: NMBridgeFactory (internal)
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9407] Loaded device plugin: NMBondFactory (internal)
+11월 27 11:53:48 YEOMC systemd[1]: Started Hostname Service.
+-- Subject: Unit systemd-hostnamed.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-hostnamed.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9410] Loaded device plugin: NMWifiFactory (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-wifi.so)
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9412] Loaded device plugin: NMAtmManager (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-adsl.so)
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9416] Loaded device plugin: NMWwanFactory (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-wwan.so)
+11월 27 11:53:48 YEOMC polkitd[898]: started daemon version 0.105 using authority implementation `local' version `0.105'
+11월 27 11:53:48 YEOMC systemd[1]: Started Raise network interfaces.
+-- Subject: Unit networking.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit networking.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Reached target Network.
+-- Subject: Unit network.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit network.target has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC systemd[1]: Starting MariaDB database server...
+-- Subject: Unit mariadb.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit mariadb.service has begun starting up.
+11월 27 11:53:48 YEOMC nm-dispatcher[893]: req:1 'hostname': new request (1 scripts)
+11월 27 11:53:48 YEOMC nm-dispatcher[893]: req:1 'hostname': start running ordered scripts...
+11월 27 11:53:48 YEOMC dbus[669]: [0;1;39m[system] Successfully activated service 'org.freedesktop.PolicyKit1'[0m
+11월 27 11:53:48 YEOMC systemd[1]: Started Authenticate and Authorize Users to Run Privileged Tasks.
+-- Subject: Unit polkitd.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit polkitd.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9488] Loaded device plugin: NMBluezManager (/usr/lib/x86_64-linux-gnu/NetworkManager/libnm-device-plugin-bluetooth.so)
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9500] manager: (enp2s0): new Ethernet device (/org/freedesktop/NetworkManager/Devices/0)
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9506] keyfile: add connection in-memory (307dd47a-8a32-31fb-ba6b-ab73327b3dc0,"Wired connection 1")
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9508] settings: (enp2s0): created default wired connection 'Wired connection 1'
+11월 27 11:53:48 YEOMC systemd[1]: Received SIGRTMIN+21 from PID 322 (plymouthd).
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9513] device (enp2s0): state change: unmanaged -> unavailable (reason 'managed') [10 20 2]
+11월 27 11:53:48 YEOMC kernel: IPv6: ADDRCONF(NETDEV_UP): enp2s0: link is not ready
+11월 27 11:53:48 YEOMC systemd[1]: Started Modem Manager.
+-- Subject: Unit ModemManager.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ModemManager.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC dbus[669]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.Accounts' unit='accounts-daemon.service'[0m
+11월 27 11:53:48 YEOMC systemd[1]: Started Light Display Manager.
+-- Subject: Unit lightdm.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit lightdm.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC accounts-daemon[697]: started daemon version 0.6.40
+11월 27 11:53:48 YEOMC systemd[1]: Started Accounts Service.
+-- Subject: Unit accounts-daemon.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit accounts-daemon.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:48 YEOMC dbus[669]: [0;1;39m[system] Successfully activated service 'org.freedesktop.Accounts'[0m
+11월 27 11:53:48 YEOMC kernel: r8169 0000:02:00.0 enp2s0: link down
+11월 27 11:53:48 YEOMC kernel: r8169 0000:02:00.0 enp2s0: link down
+11월 27 11:53:48 YEOMC kernel: IPv6: ADDRCONF(NETDEV_UP): enp2s0: link is not ready
+11월 27 11:53:48 YEOMC NetworkManager[706]: [0;1;31mnm_device_get_device_type: assertion 'NM_IS_DEVICE (self)' failed[0m
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9724] device (lo): link connected
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9727] manager: (lo): new Generic device (/org/freedesktop/NetworkManager/Devices/1)
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9754] urfkill disappeared from the bus
+11월 27 11:53:48 YEOMC whoopsie[676]: [11:53:48] Could not get the Network Manager state:
+11월 27 11:53:48 YEOMC whoopsie[676]: [11:53:48] GDBus.Error:org.freedesktop.DBus.Error.InvalidArgs: No such property 'state'
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9800] ofono is now available
+11월 27 11:53:48 YEOMC NetworkManager[706]: [0;1;39m<warn>  [1480215228.9806] failed to enumerate oFono devices: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.ofono was not provided by any .service files[0m
+11월 27 11:53:48 YEOMC NetworkManager[706]: <info>  [1480215228.9807] ModemManager available in the bus
+11월 27 11:53:49 YEOMC /usr/lib/snapd/snapd[902]: daemon.go:219: DEBUG: adding /
+11월 27 11:53:49 YEOMC /usr/lib/snapd/snapd[902]: daemon.go:219: DEBUG: adding /v2/system-info
+11월 27 11:53:49 YEOMC /usr/lib/snapd/snapd[902]: daemon.go:219: DEBUG: adding /v2/login
+11월 27 11:53:49 YEOMC /usr/lib/snapd/snapd[902]: daemon.go:219: DEBUG: adding /v2/logout
+11월 27 11:53:49 YEOMC /usr/lib/snapd/snapd[902]: daemon.go:219: DEBUG: adding /v2/icons/{name}/icon
+11월 27 11:53:49 YEOMC /usr/lib/snapd/snapd[902]: daemon.go:219: DEBUG: adding /v2/find
+11월 27 11:53:49 YEOMC /usr/lib/snapd/snapd[902]: daemon.go:219: DEBUG: adding /v2/snaps
+11월 27 11:53:49 YEOMC /usr/lib/snapd/snapd[902]: daemon.go:219: DEBUG: adding /v2/snaps/{name}
+11월 27 11:53:49 YEOMC /usr/lib/snapd/snapd[902]: daemon.go:219: DEBUG: adding /v2/snaps/{name}/conf
+11월 27 11:53:49 YEOMC /usr/lib/snapd/snapd[902]: daemon.go:219: DEBUG: adding /v2/interfaces
+11월 27 11:53:49 YEOMC /usr/lib/snapd/snapd[902]: daemon.go:219: DEBUG: adding /v2/assertions
+11월 27 11:53:49 YEOMC /usr/lib/snapd/snapd[902]: daemon.go:219: DEBUG: adding /v2/assertions/{assertType}
+11월 27 11:53:49 YEOMC /usr/lib/snapd/snapd[902]: daemon.go:219: DEBUG: adding /v2/events
+11월 27 11:53:49 YEOMC /usr/lib/snapd/snapd[902]: daemon.go:219: DEBUG: adding /v2/changes/{id}
+11월 27 11:53:49 YEOMC /usr/lib/snapd/snapd[902]: daemon.go:219: DEBUG: adding /v2/changes
+11월 27 11:53:49 YEOMC /usr/lib/snapd/snapd[902]: daemon.go:219: DEBUG: adding /v2/create-user
+11월 27 11:53:49 YEOMC /usr/lib/snapd/snapd[902]: daemon.go:219: DEBUG: adding /v2/buy
+11월 27 11:53:49 YEOMC /usr/lib/snapd/snapd[902]: daemon.go:219: DEBUG: adding /v2/buy/ready
+11월 27 11:53:49 YEOMC /usr/lib/snapd/snapd[902]: daemon.go:219: DEBUG: adding /v2/buy/methods
+11월 27 11:53:49 YEOMC /usr/lib/snapd/snapd[902]: daemon.go:219: DEBUG: adding /v2/snapctl
+11월 27 11:53:49 YEOMC /usr/lib/snapd/snapd[902]: daemon.go:209: DEBUG: init done in 639.933µs
+11월 27 11:53:49 YEOMC acpid[702]: starting up with netlink and the input layer
+11월 27 11:53:49 YEOMC acpid[702]: 9 rules loaded
+11월 27 11:53:49 YEOMC acpid[702]: waiting for events: event logging is off
+11월 27 11:53:49 YEOMC kernel: input: HDA NVidia HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:01.0/0000:01:00.1/sound/card1/input16
+11월 27 11:53:49 YEOMC kernel: input: HDA NVidia HDMI/DP,pcm=7 as /devices/pci0000:00/0000:00:01.0/0000:01:00.1/sound/card1/input17
+11월 27 11:53:49 YEOMC kernel: input: HDA NVidia HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:01.0/0000:01:00.1/sound/card1/input18
+11월 27 11:53:49 YEOMC kernel: input: HDA NVidia HDMI/DP,pcm=9 as /devices/pci0000:00/0000:00:01.0/0000:01:00.1/sound/card1/input19
+11월 27 11:53:49 YEOMC nvidia-persistenced[693]: device 0000:01:00.0 - registered
+11월 27 11:53:49 YEOMC nvidia-persistenced[693]: Local RPC service initialized
+11월 27 11:53:49 YEOMC kernel: [0;1;39mNVRM: Your system is not currently configured to drive a VGA console[0m
+11월 27 11:53:49 YEOMC kernel: [0;1;39mNVRM: on the primary VGA device. The NVIDIA Linux graphics driver[0m
+11월 27 11:53:49 YEOMC kernel: [0;1;39mNVRM: requires the use of a text-mode VGA console. Use of other console[0m
+11월 27 11:53:49 YEOMC kernel: [0;1;39mNVRM: drivers including, but not limited to, vesafb, may result in[0m
+11월 27 11:53:49 YEOMC kernel: [0;1;39mNVRM: corruption and stability problems, and is not supported.[0m
+11월 27 11:53:49 YEOMC kernel: nvidia-modeset: Allocated GPU:0 (GPU-9d9abf9b-3b20-cd7c-4434-84e291944fa5) @ PCI:0000:01:00.0
+11월 27 11:53:49 YEOMC mysqld[1121]: 2016-11-27 11:53:49 140451337419008 [Note] /usr/sbin/mysqld (mysqld 10.1.19-MariaDB-1~xenial) starting as process 1121 ...
+11월 27 11:53:49 YEOMC acpid[702]: [0;1;39mclient connected from 949[0:0][0m
+11월 27 11:53:49 YEOMC acpid[702]: 1 client rule loaded
+11월 27 11:53:49 YEOMC mysqld[1121]: 2016-11-27 11:53:49 140451337419008 [Note] InnoDB: Using mutexes to ref count buffer pool pages
+11월 27 11:53:49 YEOMC mysqld[1121]: 2016-11-27 11:53:49 140451337419008 [Note] InnoDB: The InnoDB memory heap is disabled
+11월 27 11:53:49 YEOMC mysqld[1121]: 2016-11-27 11:53:49 140451337419008 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+11월 27 11:53:49 YEOMC mysqld[1121]: 2016-11-27 11:53:49 140451337419008 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+11월 27 11:53:49 YEOMC mysqld[1121]: 2016-11-27 11:53:49 140451337419008 [Note] InnoDB: Compressed tables use zlib 1.2.8
+11월 27 11:53:49 YEOMC mysqld[1121]: 2016-11-27 11:53:49 140451337419008 [Note] InnoDB: Using Linux native AIO
+11월 27 11:53:49 YEOMC mysqld[1121]: 2016-11-27 11:53:49 140451337419008 [Note] InnoDB: Using SSE crc32 instructions
+11월 27 11:53:49 YEOMC mysqld[1121]: 2016-11-27 11:53:49 140451337419008 [Note] InnoDB: Initializing buffer pool, size = 256.0M
+11월 27 11:53:49 YEOMC mysqld[1121]: 2016-11-27 11:53:49 140451337419008 [Note] InnoDB: Completed initialization of buffer pool
+11월 27 11:53:49 YEOMC mysqld[1121]: 2016-11-27 11:53:49 140451337419008 [Note] InnoDB: Highest supported file format is Barracuda.
+11월 27 11:53:49 YEOMC mysqld[1121]: 2016-11-27 11:53:49 140451337419008 [Note] InnoDB: 128 rollback segment(s) are active.
+11월 27 11:53:49 YEOMC mysqld[1121]: 2016-11-27 11:53:49 140451337419008 [Note] InnoDB: Waiting for purge to start
+11월 27 11:53:49 YEOMC mysqld[1121]: 2016-11-27 11:53:49 140451337419008 [Note] InnoDB:  Percona XtraDB (http://www.percona.com) 5.6.32-79.0 started; log sequence number 1623751
+11월 27 11:53:49 YEOMC mysqld[1121]: 2016-11-27 11:53:49 140451337419008 [Note] Plugin 'FEEDBACK' is disabled.
+11월 27 11:53:49 YEOMC mysqld[1121]: 2016-11-27 11:53:49 140450409187072 [Note] InnoDB: Dumping buffer pool(s) not yet started
+11월 27 11:53:49 YEOMC mysqld[1121]: 2016-11-27 11:53:49 140451337419008 [Note] Server socket created on IP: '127.0.0.1'.
+11월 27 11:53:49 YEOMC mysqld[1121]: 2016-11-27 11:53:49 140451337419008 [Note] Reading of all Master_info entries succeded
+11월 27 11:53:49 YEOMC mysqld[1121]: 2016-11-27 11:53:49 140451337419008 [Note] Added new Master_info '' to hash table
+11월 27 11:53:49 YEOMC mysqld[1121]: 2016-11-27 11:53:49 140451337419008 [Note] /usr/sbin/mysqld: ready for connections.
+11월 27 11:53:49 YEOMC mysqld[1121]: Version: '10.1.19-MariaDB-1~xenial'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
+11월 27 11:53:49 YEOMC debian-start[1167]: Checking for corrupt, not cleanly closed and upgrade needing tables.
+11월 27 11:53:49 YEOMC lightdm[1179]: [0;1;31mPAM unable to dlopen(pam_kwallet.so): /lib/security/pam_kwallet.so: cannot open shared object file: No such file or directory[0m
+11월 27 11:53:49 YEOMC lightdm[1179]: [0;1;31mPAM adding faulty module: pam_kwallet.so[0m
+11월 27 11:53:49 YEOMC lightdm[1179]: [0;1;31mPAM unable to dlopen(pam_kwallet5.so): /lib/security/pam_kwallet5.so: cannot open shared object file: No such file or directory[0m
+11월 27 11:53:49 YEOMC lightdm[1179]: [0;1;31mPAM adding faulty module: pam_kwallet5.so[0m
+11월 27 11:53:49 YEOMC lightdm[1179]: pam_unix(lightdm-greeter:session): session opened for user lightdm by (uid=0)
+11월 27 11:53:49 YEOMC systemd[1]: Created slice User Slice of lightdm.
+-- Subject: Unit user-108.slice has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user-108.slice has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:49 YEOMC systemd[1]: Starting User Manager for UID 108...
+-- Subject: Unit user@108.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user@108.service has begun starting up.
+11월 27 11:53:49 YEOMC systemd-logind[687]: New session c1 of user lightdm.
+-- Subject: A new session c1 has been created for user lightdm
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- Documentation: http://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A new session with the ID c1 has been created for the user lightdm.
+-- 
+-- The leading process of the session is 1179.
+11월 27 11:53:49 YEOMC systemd[1183]: pam_unix(systemd-user:session): session opened for user lightdm by (uid=0)
+11월 27 11:53:49 YEOMC systemd[1]: Started Session c1 of user lightdm.
+-- Subject: Unit session-c1.scope has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit session-c1.scope has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:49 YEOMC systemd[1]: Started MariaDB database server.
+-- Subject: Unit mariadb.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit mariadb.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:49 YEOMC systemd[1183]: Reached target Timers.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:49 YEOMC systemd[1183]: Reached target Paths.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:49 YEOMC systemd[1183]: Reached target Sockets.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:49 YEOMC systemd[1183]: Reached target Basic System.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:49 YEOMC systemd[1183]: Reached target Default.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:49 YEOMC systemd[1183]: Startup finished in 9ms.
+-- Subject: System start-up is now complete
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- All system services necessary queued for starting at boot have been
+-- successfully started. Note that this does not mean that the machine is
+-- now idle as services might still be busy with completing start-up.
+-- 
+-- Kernel start-up required KERNEL_USEC microseconds.
+-- 
+-- Initial RAM disk start-up required INITRD_USEC microseconds.
+-- 
+-- Userspace start-up required 9774 microseconds.
+11월 27 11:53:49 YEOMC systemd[1]: Started User Manager for UID 108.
+-- Subject: Unit user@108.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user@108.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:49 YEOMC org.a11y.atspi.Registry[1213]: SpiRegistry daemon is running with well-known name - org.a11y.atspi.Registry
+11월 27 11:53:50 YEOMC lightdm[1234]: [0;1;31mPAM unable to dlopen(pam_kwallet.so): /lib/security/pam_kwallet.so: cannot open shared object file: No such file or directory[0m
+11월 27 11:53:50 YEOMC lightdm[1234]: [0;1;31mPAM adding faulty module: pam_kwallet.so[0m
+11월 27 11:53:50 YEOMC lightdm[1234]: [0;1;31mPAM unable to dlopen(pam_kwallet5.so): /lib/security/pam_kwallet5.so: cannot open shared object file: No such file or directory[0m
+11월 27 11:53:50 YEOMC lightdm[1234]: [0;1;31mPAM adding faulty module: pam_kwallet5.so[0m
+11월 27 11:53:50 YEOMC lightdm[1234]: pam_succeed_if(lightdm:auth): requirement "user ingroup nopasswdlogin" not met by user "yeomc"
+11월 27 11:53:50 YEOMC dbus[669]: [0;1;39m[system] Activating via systemd: service name='org.bluez' unit='dbus-org.bluez.service'[0m
+11월 27 11:53:50 YEOMC systemd[1]: Starting Bluetooth service...
+-- Subject: Unit bluetooth.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit bluetooth.service has begun starting up.
+11월 27 11:53:50 YEOMC bluetoothd[1259]: Bluetooth daemon 5.37
+11월 27 11:53:50 YEOMC dbus[669]: [0;1;39m[system] Successfully activated service 'org.bluez'[0m
+11월 27 11:53:50 YEOMC systemd[1]: Started Bluetooth service.
+-- Subject: Unit bluetooth.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit bluetooth.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:50 YEOMC bluetoothd[1259]: Starting SDP server
+11월 27 11:53:50 YEOMC dbus[669]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.RealtimeKit1' unit='rtkit-daemon.service'[0m
+11월 27 11:53:50 YEOMC systemd[1]: Starting RealtimeKit Scheduling Policy Service...
+-- Subject: Unit rtkit-daemon.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit rtkit-daemon.service has begun starting up.
+11월 27 11:53:50 YEOMC dbus[669]: [0;1;39m[system] Successfully activated service 'org.freedesktop.RealtimeKit1'[0m
+11월 27 11:53:50 YEOMC rtkit-daemon[1293]: Successfully called chroot.
+11월 27 11:53:50 YEOMC rtkit-daemon[1293]: Successfully dropped privileges.
+11월 27 11:53:50 YEOMC rtkit-daemon[1293]: Successfully limited resources.
+11월 27 11:53:50 YEOMC rtkit-daemon[1293]: Running.
+11월 27 11:53:50 YEOMC rtkit-daemon[1293]: Watchdog thread running.
+11월 27 11:53:50 YEOMC rtkit-daemon[1293]: Canary thread running.
+11월 27 11:53:50 YEOMC systemd[1]: Started RealtimeKit Scheduling Policy Service.
+-- Subject: Unit rtkit-daemon.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit rtkit-daemon.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:50 YEOMC rtkit-daemon[1293]: Successfully made thread 1290 of process 1290 (n/a) owned by '108' high priority at nice level -11.
+11월 27 11:53:50 YEOMC rtkit-daemon[1293]: Supervising 1 threads of 1 processes of 1 users.
+11월 27 11:53:50 YEOMC kernel: Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+11월 27 11:53:50 YEOMC kernel: Bluetooth: BNEP filters: protocol multicast
+11월 27 11:53:50 YEOMC kernel: Bluetooth: BNEP socket layer initialized
+11월 27 11:53:50 YEOMC bluetoothd[1259]: Bluetooth management interface 1.10 initialized
+11월 27 11:53:50 YEOMC NetworkManager[706]: <info>  [1480215230.1218] bluez: use BlueZ version 5
+11월 27 11:53:50 YEOMC dbus[669]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.UPower' unit='upower.service'[0m
+11월 27 11:53:50 YEOMC systemd[1]: Starting Daemon for power management...
+-- Subject: Unit upower.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit upower.service has begun starting up.
+11월 27 11:53:50 YEOMC dbus[669]: [0;1;39m[system] Successfully activated service 'org.freedesktop.UPower'[0m
+11월 27 11:53:50 YEOMC systemd[1]: Started Daemon for power management.
+-- Subject: Unit upower.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit upower.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:50 YEOMC dbus[669]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.ColorManager' unit='colord.service'[0m
+11월 27 11:53:50 YEOMC systemd[1]: Starting Manage, Install and Generate Color Profiles...
+-- Subject: Unit colord.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit colord.service has begun starting up.
+11월 27 11:53:50 YEOMC dbus[669]: [0;1;39m[system] Successfully activated service 'org.freedesktop.ColorManager'[0m
+11월 27 11:53:50 YEOMC systemd[1]: Started Manage, Install and Generate Color Profiles.
+-- Subject: Unit colord.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit colord.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:51 YEOMC ModemManager[667]: <info>  Couldn't find support for device at '/sys/devices/pci0000:00/0000:00:1c.0/0000:02:00.0': not supported by any plugin
+11월 27 11:53:52 YEOMC rtkit-daemon[1293]: Supervising 1 threads of 1 processes of 1 users.
+11월 27 11:53:52 YEOMC rtkit-daemon[1293]: Successfully made thread 1351 of process 1290 (n/a) owned by '108' RT at priority 5.
+11월 27 11:53:52 YEOMC rtkit-daemon[1293]: Supervising 2 threads of 1 processes of 1 users.
+11월 27 11:53:52 YEOMC rtkit-daemon[1293]: Supervising 2 threads of 1 processes of 1 users.
+11월 27 11:53:52 YEOMC rtkit-daemon[1293]: Successfully made thread 1352 of process 1290 (n/a) owned by '108' RT at priority 5.
+11월 27 11:53:52 YEOMC rtkit-daemon[1293]: Supervising 3 threads of 1 processes of 1 users.
+11월 27 11:53:52 YEOMC rtkit-daemon[1293]: Supervising 3 threads of 1 processes of 1 users.
+11월 27 11:53:52 YEOMC rtkit-daemon[1293]: Successfully made thread 1353 of process 1290 (n/a) owned by '108' RT at priority 5.
+11월 27 11:53:52 YEOMC rtkit-daemon[1293]: Supervising 4 threads of 1 processes of 1 users.
+11월 27 11:53:52 YEOMC pulseaudio[1290]: [0;1;31m[pulseaudio] backend-ofono.c: Failed to register as a handsfree audio agent with ofono: org.freedesktop.DBus.Error.ServiceUnknown: The name org.ofono was not provided by any .service files[0m
+11월 27 11:53:52 YEOMC rtkit-daemon[1293]: Successfully made thread 1355 of process 1355 (n/a) owned by '108' high priority at nice level -11.
+11월 27 11:53:52 YEOMC rtkit-daemon[1293]: Supervising 5 threads of 2 processes of 1 users.
+11월 27 11:53:52 YEOMC pulseaudio[1355]: [0;1;31m[pulseaudio] pid.c: Daemon already running.[0m
+11월 27 11:53:52 YEOMC NetworkManager[706]: <info>  [1480215232.5560] device (enp2s0): link connected
+11월 27 11:53:52 YEOMC NetworkManager[706]: <info>  [1480215232.5565] device (enp2s0): state change: unavailable -> disconnected (reason 'carrier-changed') [20 30 40]
+11월 27 11:53:52 YEOMC kernel: r8169 0000:02:00.0 enp2s0: link up
+11월 27 11:53:52 YEOMC kernel: IPv6: ADDRCONF(NETDEV_CHANGE): enp2s0: link becomes ready
+11월 27 11:53:52 YEOMC NetworkManager[706]: <info>  [1480215232.5569] policy: auto-activating connection 'Wired connection 1'
+11월 27 11:53:52 YEOMC NetworkManager[706]: <info>  [1480215232.5576] device (enp2s0): Activation: starting connection 'Wired connection 1' (307dd47a-8a32-31fb-ba6b-ab73327b3dc0)
+11월 27 11:53:52 YEOMC NetworkManager[706]: <info>  [1480215232.5578] device (enp2s0): state change: disconnected -> prepare (reason 'none') [30 40 0]
+11월 27 11:53:52 YEOMC NetworkManager[706]: <info>  [1480215232.5579] manager: NetworkManager state is now CONNECTING
+11월 27 11:53:52 YEOMC NetworkManager[706]: <info>  [1480215232.5581] device (enp2s0): state change: prepare -> config (reason 'none') [40 50 0]
+11월 27 11:53:52 YEOMC NetworkManager[706]: <info>  [1480215232.5586] device (enp2s0): state change: config -> ip-config (reason 'none') [50 70 0]
+11월 27 11:53:52 YEOMC whoopsie[676]: [11:53:52] offline
+11월 27 11:53:52 YEOMC NetworkManager[706]: <info>  [1480215232.5594] dhcp4 (enp2s0): activation: beginning transaction (timeout in 45 seconds)
+11월 27 11:53:52 YEOMC NetworkManager[706]: <info>  [1480215232.5635] dhcp4 (enp2s0): dhclient started with pid 1358
+11월 27 11:53:52 YEOMC dhclient[1358]: DHCPREQUEST of 192.168.1.22 on enp2s0 to 255.255.255.255 port 67 (xid=0x3a144c63)
+11월 27 11:53:53 YEOMC colord-sane[1346]: [0;1;31mio/hpmud/pp.c 627: unable to read device-id ret=-1[0m
+11월 27 11:53:54 YEOMC avahi-daemon[701]: Joining mDNS multicast group on interface enp2s0.IPv6 with address fe80::428a:793f:b417:65f1.
+11월 27 11:53:54 YEOMC avahi-daemon[701]: New relevant interface enp2s0.IPv6 for mDNS.
+11월 27 11:53:54 YEOMC avahi-daemon[701]: Registering new address record for fe80::428a:793f:b417:65f1 on enp2s0.*.
+11월 27 11:53:54 YEOMC org.gtk.vfs.Daemon[1198]: [0;1;39mA connection to the bus can't be made[0m
+11월 27 11:53:54 YEOMC lightdm[1179]: pam_unix(lightdm-greeter:session): session closed for user lightdm
+11월 27 11:53:54 YEOMC lightdm[1234]: pam_unix(lightdm:session): session opened for user yeomc by (uid=0)
+11월 27 11:53:54 YEOMC systemd[1]: Created slice User Slice of yeomc.
+-- Subject: Unit user-1000.slice has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user-1000.slice has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:54 YEOMC systemd[1]: Starting User Manager for UID 1000...
+-- Subject: Unit user@1000.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user@1000.service has begun starting up.
+11월 27 11:53:54 YEOMC systemd[1371]: pam_unix(systemd-user:session): session opened for user yeomc by (uid=0)
+11월 27 11:53:54 YEOMC systemd-logind[687]: New session c2 of user yeomc.
+-- Subject: A new session c2 has been created for user yeomc
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- Documentation: http://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A new session with the ID c2 has been created for the user yeomc.
+-- 
+-- The leading process of the session is 1234.
+11월 27 11:53:54 YEOMC systemd[1]: Started Session c2 of user yeomc.
+-- Subject: Unit session-c2.scope has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit session-c2.scope has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:54 YEOMC systemd[1371]: Reached target Paths.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:54 YEOMC systemd[1371]: Reached target Sockets.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:54 YEOMC systemd[1371]: Reached target Timers.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:54 YEOMC systemd[1371]: Reached target Basic System.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:54 YEOMC systemd[1371]: Reached target Default.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:54 YEOMC systemd[1371]: Startup finished in 10ms.
+-- Subject: System start-up is now complete
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- All system services necessary queued for starting at boot have been
+-- successfully started. Note that this does not mean that the machine is
+-- now idle as services might still be busy with completing start-up.
+-- 
+-- Kernel start-up required KERNEL_USEC microseconds.
+-- 
+-- Initial RAM disk start-up required INITRD_USEC microseconds.
+-- 
+-- Userspace start-up required 10267 microseconds.
+11월 27 11:53:54 YEOMC systemd[1]: Started User Manager for UID 1000.
+-- Subject: Unit user@1000.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user@1000.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:54 YEOMC org.ayatana.bamf[1459]: bamfdaemon start/running, process 1544
+11월 27 11:53:55 YEOMC org.freedesktop.Notifications[1459]: [0;1;39m** (notify-osd:1564): WARNING **: Couldn't connect to accessibility bus: Failed to connect to socket /tmp/dbus-xh0pA9hUFq: Connection refused[0m
+11월 27 11:53:55 YEOMC dhclient[1358]: DHCPREQUEST of 192.168.1.22 on enp2s0 to 255.255.255.255 port 67 (xid=0x3a144c63)
+11월 27 11:53:55 YEOMC org.a11y.atspi.Registry[1610]: SpiRegistry daemon is running with well-known name - org.a11y.atspi.Registry
+11월 27 11:53:56 YEOMC rtkit-daemon[1293]: Successfully made thread 1712 of process 1712 (n/a) owned by '1000' high priority at nice level -11.
+11월 27 11:53:56 YEOMC rtkit-daemon[1293]: Supervising 5 threads of 2 processes of 2 users.
+11월 27 11:53:56 YEOMC org.gnome.ScreenSaver[1459]: [0;1;39m** (gnome-screensaver:1704): WARNING **: Couldn't get presence status: The name org.gnome.SessionManager was not provided by any .service files[0m
+11월 27 11:53:56 YEOMC gnome-keyring-daemon[1379]: [0;1;39mThe PKCS#11 component was already initialized[0m
+11월 27 11:53:56 YEOMC gnome-session[1598]: SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+11월 27 11:53:56 YEOMC gnome-keyring-daemon[1379]: [0;1;39mThe Secret Service was already initialized[0m
+11월 27 11:53:56 YEOMC gnome-session[1598]: SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+11월 27 11:53:56 YEOMC gnome-keyring-daemon[1379]: [0;1;39mThe SSH agent was already initialized[0m
+11월 27 11:53:56 YEOMC gnome-session[1598]: SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+11월 27 11:53:56 YEOMC dbus[669]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.UDisks2' unit='udisks2.service'[0m
+11월 27 11:53:56 YEOMC systemd[1]: Starting Disk Manager...
+-- Subject: Unit udisks2.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit udisks2.service has begun starting up.
+11월 27 11:53:56 YEOMC udisksd[1797]: [0;1;39mudisks daemon version 2.1.7 starting[0m
+11월 27 11:53:56 YEOMC dbus[669]: [0;1;39m[system] Successfully activated service 'org.freedesktop.UDisks2'[0m
+11월 27 11:53:56 YEOMC systemd[1]: Started Disk Manager.
+-- Subject: Unit udisks2.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit udisks2.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:56 YEOMC udisksd[1797]: [0;1;39mAcquired the name org.freedesktop.UDisks2 on the system message bus[0m
+11월 27 11:53:56 YEOMC org.gtk.vfs.AfcVolumeMonitor[1459]: Volume monitor alive
+11월 27 11:53:57 YEOMC org.gnome.ScreenSaver[1459]: [0;1;39m** Message: Lost the name, shutting down.[0m
+11월 27 11:53:58 YEOMC rtkit-daemon[1293]: Supervising 5 threads of 2 processes of 2 users.
+11월 27 11:53:58 YEOMC rtkit-daemon[1293]: Successfully made thread 1864 of process 1712 (n/a) owned by '1000' RT at priority 5.
+11월 27 11:53:58 YEOMC rtkit-daemon[1293]: Supervising 6 threads of 2 processes of 2 users.
+11월 27 11:53:58 YEOMC rtkit-daemon[1293]: Supervising 6 threads of 2 processes of 2 users.
+11월 27 11:53:58 YEOMC rtkit-daemon[1293]: Successfully made thread 1865 of process 1712 (n/a) owned by '1000' RT at priority 5.
+11월 27 11:53:58 YEOMC rtkit-daemon[1293]: Supervising 7 threads of 2 processes of 2 users.
+11월 27 11:53:58 YEOMC rtkit-daemon[1293]: Supervising 7 threads of 2 processes of 2 users.
+11월 27 11:53:58 YEOMC rtkit-daemon[1293]: Successfully made thread 1866 of process 1712 (n/a) owned by '1000' RT at priority 5.
+11월 27 11:53:58 YEOMC rtkit-daemon[1293]: Supervising 8 threads of 2 processes of 2 users.
+11월 27 11:53:58 YEOMC pulseaudio[1712]: [0;1;31m[pulseaudio] backend-ofono.c: Failed to register as a handsfree audio agent with ofono: org.freedesktop.DBus.Error.ServiceUnknown: The name org.ofono was not provided by any .service files[0m
+11월 27 11:53:58 YEOMC rtkit-daemon[1293]: Successfully made thread 1868 of process 1868 (n/a) owned by '1000' high priority at nice level -11.
+11월 27 11:53:58 YEOMC rtkit-daemon[1293]: Supervising 9 threads of 3 processes of 2 users.
+11월 27 11:53:58 YEOMC pulseaudio[1868]: [0;1;31m[pulseaudio] pid.c: Daemon already running.[0m
+11월 27 11:53:58 YEOMC rtkit-daemon[1293]: Successfully made thread 1870 of process 1870 (n/a) owned by '1000' high priority at nice level -11.
+11월 27 11:53:58 YEOMC rtkit-daemon[1293]: Supervising 9 threads of 3 processes of 2 users.
+11월 27 11:53:58 YEOMC pulseaudio[1870]: [0;1;31m[pulseaudio] pid.c: Daemon already running.[0m
+11월 27 11:53:58 YEOMC dbus[669]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.locale1' unit='dbus-org.freedesktop.locale1.service'[0m
+11월 27 11:53:58 YEOMC systemd[1]: Starting Locale Service...
+-- Subject: Unit systemd-localed.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-localed.service has begun starting up.
+11월 27 11:53:58 YEOMC gnome-session-binary[1598]: [0;1;39mEntering running state[0m
+11월 27 11:53:58 YEOMC gnome-session[1598]: (process:1889): indicator-application-service-WARNING **: Unable to get watcher name 'org.kde.StatusNotifierWatcher'
+11월 27 11:53:58 YEOMC gnome-session[1598]: (process:1889): indicator-application-service-WARNING **: Name Lost
+11월 27 11:53:58 YEOMC gnome-session[1598]: (nautilus:1878): GLib-GIO-CRITICAL **: g_dbus_interface_skeleton_unexport: assertion 'interface_->priv->connections != NULL' failed
+11월 27 11:53:58 YEOMC gnome-session[1598]: (nautilus:1878): GLib-GIO-CRITICAL **: g_dbus_interface_skeleton_unexport: assertion 'interface_->priv->connections != NULL' failed
+11월 27 11:53:58 YEOMC gnome-session[1598]: (nautilus:1878): Gtk-CRITICAL **: gtk_icon_theme_get_for_screen: assertion 'GDK_IS_SCREEN (screen)' failed
+11월 27 11:53:58 YEOMC gnome-session[1598]: (nautilus:1878): GLib-GObject-WARNING **: invalid (NULL) pointer instance
+11월 27 11:53:58 YEOMC gnome-session[1598]: (nautilus:1878): GLib-GObject-CRITICAL **: g_signal_connect_object: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+11월 27 11:53:58 YEOMC dbus[669]: [0;1;39m[system] Successfully activated service 'org.freedesktop.locale1'[0m
+11월 27 11:53:58 YEOMC systemd[1]: Started Locale Service.
+-- Subject: Unit systemd-localed.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-localed.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:53:58 YEOMC polkitd(authority=local)[898]: [0;1;39mRegistered Authentication Agent for unix-session:c2 (system bus name :1.105 [/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1], object path /org/gnome/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)[0m
+11월 27 11:53:58 YEOMC gnome-session[1598]: (gnome-software:1886): Gs-WARNING **: Failed to create permission org.freedesktop.packagekit.trigger-offline-update: GDBus.Error:org.freedesktop.PolicyKit1.Error.Failed: Action org.freedesktop.packagekit.trigger-offline-update is not registered
+11월 27 11:53:58 YEOMC gnome-session[1598]: (gnome-software:1886): Gs-WARNING **: Failed to create permission org.freedesktop.packagekit.trigger-offline-update: GDBus.Error:org.freedesktop.PolicyKit1.Error.Failed: Action org.freedesktop.packagekit.trigger-offline-update is not registered
+11월 27 11:53:58 YEOMC dbus[669]: [0;1;39m[system] Activating service name='org.freedesktop.fwupd' (using servicehelper)[0m
+11월 27 11:53:58 YEOMC NetworkManager[706]: <info>  [1480215238.6854] WiFi hardware radio set enabled
+11월 27 11:53:58 YEOMC NetworkManager[706]: <info>  [1480215238.6854] WWAN hardware radio set enabled
+11월 27 11:53:58 YEOMC dbus[669]: [0;1;39m[system] Successfully activated service 'org.freedesktop.fwupd'[0m
+11월 27 11:54:00 YEOMC NetworkManager[706]: <info>  [1480215240.0881] device (enp2s0): link disconnected (deferring action for 4 seconds)
+11월 27 11:54:00 YEOMC kernel: r8169 0000:02:00.0 enp2s0: link down
+11월 27 11:54:00 YEOMC dhclient[1358]: DHCPREQUEST of 192.168.1.22 on enp2s0 to 255.255.255.255 port 67 (xid=0x3a144c63)
+11월 27 11:54:03 YEOMC NetworkManager[706]: <info>  [1480215243.0001] device (enp2s0): link connected
+11월 27 11:54:03 YEOMC kernel: r8169 0000:02:00.0 enp2s0: link up
+11월 27 11:54:08 YEOMC dhclient[1358]: DHCPDISCOVER on enp2s0 to 255.255.255.255 port 67 interval 3 (xid=0x9cd43a7e)
+11월 27 11:54:09 YEOMC NetworkManager[706]: [0;1;39m<warn>  [1480215249.7820] device (enp2s0): disconnecting connection 'Wired connection 1' for new activation request.[0m
+11월 27 11:54:09 YEOMC NetworkManager[706]: <info>  [1480215249.7821] device (enp2s0): state change: ip-config -> deactivating (reason 'new-activation') [70 110 60]
+11월 27 11:54:09 YEOMC NetworkManager[706]: <info>  [1480215249.7822] manager: NetworkManager state is now DISCONNECTING
+11월 27 11:54:09 YEOMC NetworkManager[706]: <info>  [1480215249.7825] device (enp2s0): disconnecting for new activation request.
+11월 27 11:54:09 YEOMC NetworkManager[706]: <info>  [1480215249.7826] audit: op="connection-activate" uuid="307dd47a-8a32-31fb-ba6b-ab73327b3dc0" name="Wired connection 1" pid=1885 uid=1000 result="success"
+11월 27 11:54:09 YEOMC NetworkManager[706]: <info>  [1480215249.7827] device (enp2s0): state change: deactivating -> disconnected (reason 'new-activation') [110 30 60]
+11월 27 11:54:09 YEOMC avahi-daemon[701]: Withdrawing address record for fe80::428a:793f:b417:65f1 on enp2s0.
+11월 27 11:54:09 YEOMC avahi-daemon[701]: Leaving mDNS multicast group on interface enp2s0.IPv6 with address fe80::428a:793f:b417:65f1.
+11월 27 11:54:09 YEOMC avahi-daemon[701]: Interface enp2s0.IPv6 no longer relevant for mDNS.
+11월 27 11:54:09 YEOMC NetworkManager[706]: <info>  [1480215249.8011] dhcp4 (enp2s0): canceled DHCP transaction, DHCP client pid 1358
+11월 27 11:54:09 YEOMC NetworkManager[706]: <info>  [1480215249.8011] dhcp4 (enp2s0): state changed unknown -> done
+11월 27 11:54:09 YEOMC NetworkManager[706]: <info>  [1480215249.8018] manager: NetworkManager state is now DISCONNECTED
+11월 27 11:54:09 YEOMC dbus[669]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service'[0m
+11월 27 11:54:09 YEOMC NetworkManager[706]: <info>  [1480215249.8018] device (enp2s0): Activation: starting connection 'Wired connection 1' (307dd47a-8a32-31fb-ba6b-ab73327b3dc0)
+11월 27 11:54:09 YEOMC NetworkManager[706]: <info>  [1480215249.8030] device (enp2s0): state change: disconnected -> prepare (reason 'none') [30 40 0]
+11월 27 11:54:09 YEOMC NetworkManager[706]: <info>  [1480215249.8031] manager: NetworkManager state is now CONNECTING
+11월 27 11:54:09 YEOMC dhclient[2234]: DHCPREQUEST of 192.168.1.22 on enp2s0 to 255.255.255.255 port 67 (xid=0x7e8dfa11)
+11월 27 11:54:09 YEOMC NetworkManager[706]: <info>  [1480215249.8033] device (enp2s0): state change: prepare -> config (reason 'none') [40 50 0]
+11월 27 11:54:09 YEOMC NetworkManager[706]: <info>  [1480215249.8035] device (enp2s0): state change: config -> ip-config (reason 'none') [50 70 0]
+11월 27 11:54:09 YEOMC NetworkManager[706]: <info>  [1480215249.8036] dhcp4 (enp2s0): activation: beginning transaction (timeout in 45 seconds)
+11월 27 11:54:09 YEOMC NetworkManager[706]: <info>  [1480215249.8063] dhcp4 (enp2s0): dhclient started with pid 2234
+11월 27 11:54:09 YEOMC systemd[1]: Starting Network Manager Script Dispatcher Service...
+-- Subject: Unit NetworkManager-dispatcher.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit NetworkManager-dispatcher.service has begun starting up.
+11월 27 11:54:09 YEOMC dbus[669]: [0;1;39m[system] Successfully activated service 'org.freedesktop.nm_dispatcher'[0m
+11월 27 11:54:09 YEOMC systemd[1]: Started Network Manager Script Dispatcher Service.
+-- Subject: Unit NetworkManager-dispatcher.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit NetworkManager-dispatcher.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:54:09 YEOMC nm-dispatcher[2232]: req:1 'down' [enp2s0]: new request (1 scripts)
+11월 27 11:54:09 YEOMC nm-dispatcher[2232]: req:1 'down' [enp2s0]: start running ordered scripts...
+11월 27 11:54:11 YEOMC avahi-daemon[701]: Joining mDNS multicast group on interface enp2s0.IPv6 with address fe80::428a:793f:b417:65f1.
+11월 27 11:54:11 YEOMC avahi-daemon[701]: New relevant interface enp2s0.IPv6 for mDNS.
+11월 27 11:54:11 YEOMC avahi-daemon[701]: Registering new address record for fe80::428a:793f:b417:65f1 on enp2s0.*.
+11월 27 11:54:12 YEOMC dhclient[2234]: DHCPREQUEST of 192.168.1.22 on enp2s0 to 255.255.255.255 port 67 (xid=0x7e8dfa11)
+11월 27 11:54:15 YEOMC NetworkManager[706]: <info>  [1480215255.6180] device (enp2s0): link disconnected (deferring action for 4 seconds)
+11월 27 11:54:15 YEOMC kernel: r8169 0000:02:00.0 enp2s0: link down
+11월 27 11:54:18 YEOMC NetworkManager[706]: <info>  [1480215258.6777] device (enp2s0): link connected
+11월 27 11:54:18 YEOMC kernel: r8169 0000:02:00.0 enp2s0: link up
+11월 27 11:54:18 YEOMC org.gnome.zeitgeist.Engine[1459]: [0;1;39m** (zeitgeist-datahub:2303): WARNING **: zeitgeist-datahub.vala:229: Unable to get name "org.gnome.zeitgeist.datahub" on the bus![0m
+11월 27 11:54:18 YEOMC systemd[1]: [0;1;39mNetworkManager-wait-online.service: Main process exited, code=exited, status=1/FAILURE[0m
+11월 27 11:54:18 YEOMC systemd[1]: [0;1;31mFailed to start Network Manager Wait Online.[0m
+-- Subject: Unit NetworkManager-wait-online.service has failed
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit NetworkManager-wait-online.service has failed.
+-- 
+-- The result is failed.
+11월 27 11:54:18 YEOMC systemd[1]: [0;1;39mNetworkManager-wait-online.service: Unit entered failed state.[0m
+11월 27 11:54:18 YEOMC systemd[1]: [0;1;39mNetworkManager-wait-online.service: Failed with result 'exit-code'.[0m
+11월 27 11:54:18 YEOMC systemd[1]: Reached target Network is Online.
+-- Subject: Unit network-online.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit network-online.target has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:54:19 YEOMC systemd[1]: Starting LSB: Apache2 web server...
+-- Subject: Unit apache2.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit apache2.service has begun starting up.
+11월 27 11:54:19 YEOMC systemd[1]: Starting /etc/rc.local Compatibility...
+-- Subject: Unit rc-local.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit rc-local.service has begun starting up.
+11월 27 11:54:19 YEOMC systemd[1]: Started /etc/rc.local Compatibility.
+-- Subject: Unit rc-local.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit rc-local.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:54:19 YEOMC systemd[1]: Starting Hold until boot process finishes up...
+-- Subject: Unit plymouth-quit-wait.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit plymouth-quit-wait.service has begun starting up.
+11월 27 11:54:19 YEOMC apache2[2319]:  * Starting Apache httpd web server apache2
+11월 27 11:54:19 YEOMC systemd[1]: Started Hold until boot process finishes up.
+-- Subject: Unit plymouth-quit-wait.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit plymouth-quit-wait.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:54:19 YEOMC systemd[1]: Started Getty on tty1.
+-- Subject: Unit getty@tty1.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit getty@tty1.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:54:19 YEOMC systemd[1]: Reached target Login Prompts.
+-- Subject: Unit getty.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit getty.target has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:54:19 YEOMC systemd[1]: Starting Set console scheme...
+-- Subject: Unit setvtrgb.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit setvtrgb.service has begun starting up.
+11월 27 11:54:19 YEOMC systemd[1]: Started Set console scheme.
+-- Subject: Unit setvtrgb.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit setvtrgb.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:54:19 YEOMC apache2[2319]: AH00557: apache2: apr_sockaddr_info_get() failed for YEOMC
+11월 27 11:54:19 YEOMC apache2[2319]: AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1. Set the 'ServerName' directive globally to suppress this message
+11월 27 11:54:20 YEOMC apache2[2319]:  *
+11월 27 11:54:20 YEOMC systemd[1]: Started LSB: Apache2 web server.
+-- Subject: Unit apache2.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit apache2.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:54:20 YEOMC systemd[1]: Reached target Multi-User System.
+-- Subject: Unit multi-user.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit multi-user.target has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:54:20 YEOMC systemd[1]: Starting Notify bootloader that boot was successful...
+-- Subject: Unit snapd.boot-ok.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit snapd.boot-ok.service has begun starting up.
+11월 27 11:54:20 YEOMC systemd[1]: Reached target Graphical Interface.
+-- Subject: Unit graphical.target has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit graphical.target has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:54:20 YEOMC systemd[1]: Starting Update UTMP about System Runlevel Changes...
+-- Subject: Unit systemd-update-utmp-runlevel.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-update-utmp-runlevel.service has begun starting up.
+11월 27 11:54:20 YEOMC systemd[1]: Started Stop ureadahead data collection 45s after completed startup.
+-- Subject: Unit ureadahead-stop.timer has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ureadahead-stop.timer has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:54:20 YEOMC systemd[1]: Started Update UTMP about System Runlevel Changes.
+-- Subject: Unit systemd-update-utmp-runlevel.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-update-utmp-runlevel.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:54:20 YEOMC systemd[1]: Started Notify bootloader that boot was successful.
+-- Subject: Unit snapd.boot-ok.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit snapd.boot-ok.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:54:20 YEOMC snap[2378]: Ignoring 'booted' on classic
+11월 27 11:54:20 YEOMC systemd[1]: Startup finished in 11.517s (kernel) + 31.910s (userspace) = 1min 6.503s.
+-- Subject: System start-up is now complete
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- All system services necessary queued for starting at boot have been
+-- successfully started. Note that this does not mean that the machine is
+-- now idle as services might still be busy with completing start-up.
+-- 
+-- Kernel start-up required 11517529 microseconds.
+-- 
+-- Initial RAM disk start-up required INITRD_USEC microseconds.
+-- 
+-- Userspace start-up required 31910043 microseconds.
+11월 27 11:54:20 YEOMC dhclient[2234]: DHCPDISCOVER on enp2s0 to 255.255.255.255 port 67 interval 3 (xid=0xfa5d2c31)
+11월 27 11:54:20 YEOMC dhclient[2234]: DHCPREQUEST of 192.168.1.22 on enp2s0 to 255.255.255.255 port 67 (xid=0x312c5dfa)
+11월 27 11:54:20 YEOMC dhclient[2234]: DHCPOFFER of 192.168.1.22 from 192.168.1.1
+11월 27 11:54:20 YEOMC dhclient[2234]: DHCPACK of 192.168.1.22 from 192.168.1.1
+11월 27 11:54:20 YEOMC NetworkManager[706]: <info>  [1480215260.7387]   address 192.168.1.22
+11월 27 11:54:20 YEOMC NetworkManager[706]: <info>  [1480215260.7387]   plen 24 (255.255.255.0)
+11월 27 11:54:20 YEOMC NetworkManager[706]: <info>  [1480215260.7388]   gateway 192.168.1.1
+11월 27 11:54:20 YEOMC NetworkManager[706]: <info>  [1480215260.7388]   server identifier 192.168.1.1
+11월 27 11:54:20 YEOMC NetworkManager[706]: <info>  [1480215260.7388]   lease time 86400
+11월 27 11:54:20 YEOMC NetworkManager[706]: <info>  [1480215260.7388]   hostname 'YEOMC'
+11월 27 11:54:20 YEOMC NetworkManager[706]: <info>  [1480215260.7388]   nameserver '192.168.1.1'
+11월 27 11:54:20 YEOMC NetworkManager[706]: <info>  [1480215260.7388] dhcp4 (enp2s0): state changed unknown -> bound
+11월 27 11:54:20 YEOMC NetworkManager[706]: <info>  [1480215260.7396] device (enp2s0): state change: ip-config -> ip-check (reason 'none') [70 80 0]
+11월 27 11:54:20 YEOMC NetworkManager[706]: <info>  [1480215260.7399] device (enp2s0): state change: ip-check -> secondaries (reason 'none') [80 90 0]
+11월 27 11:54:20 YEOMC NetworkManager[706]: <info>  [1480215260.7401] device (enp2s0): state change: secondaries -> activated (reason 'none') [90 100 0]
+11월 27 11:54:20 YEOMC NetworkManager[706]: <info>  [1480215260.7401] manager: NetworkManager state is now CONNECTED_LOCAL
+11월 27 11:54:20 YEOMC avahi-daemon[701]: Joining mDNS multicast group on interface enp2s0.IPv4 with address 192.168.1.22.
+11월 27 11:54:20 YEOMC avahi-daemon[701]: New relevant interface enp2s0.IPv4 for mDNS.
+11월 27 11:54:20 YEOMC avahi-daemon[701]: Registering new address record for 192.168.1.22 on enp2s0.IPv4.
+11월 27 11:54:20 YEOMC dhclient[2234]: bound to 192.168.1.22 -- renewal in 33658 seconds.
+11월 27 11:54:20 YEOMC whoopsie[676]: [11:54:20] Cannot reach: https://daisy.ubuntu.com
+11월 27 11:54:20 YEOMC NetworkManager[706]: <info>  [1480215260.7441] manager: NetworkManager state is now CONNECTED_GLOBAL
+11월 27 11:54:20 YEOMC NetworkManager[706]: <info>  [1480215260.7442] policy: set 'Wired connection 1' (enp2s0) as default for IPv4 routing and DNS
+11월 27 11:54:20 YEOMC NetworkManager[706]: <info>  [1480215260.7443] dns-plugin[0xa02d00]: starting dnsmasq...
+11월 27 11:54:20 YEOMC NetworkManager[706]: <info>  [1480215260.7464] dns-mgr: Writing DNS information to /sbin/resolvconf
+11월 27 11:54:20 YEOMC dnsmasq[2412]: started, version 2.75 cache disabled
+11월 27 11:54:20 YEOMC dnsmasq[2412]: compile time options: IPv6 GNU-getopt DBus i18n IDN DHCP DHCPv6 no-Lua TFTP conntrack ipset auth DNSSEC loop-detect inotify
+11월 27 11:54:20 YEOMC dnsmasq[2412]: DBus support enabled: connected to system bus
+11월 27 11:54:20 YEOMC dnsmasq[2412]: [0;1;39mwarning: no upstream servers configured[0m
+11월 27 11:54:20 YEOMC NetworkManager[706]: <info>  [1480215260.7823] device (enp2s0): Activation: successful, device activated.
+11월 27 11:54:20 YEOMC NetworkManager[706]: <info>  [1480215260.7827] manager: startup complete
+11월 27 11:54:20 YEOMC dbus[669]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service'[0m
+11월 27 11:54:20 YEOMC NetworkManager[706]: <info>  [1480215260.7843] dnsmasq[0xa02d00]: dnsmasq appeared as :1.117
+11월 27 11:54:20 YEOMC whoopsie[676]: [11:54:20] The default IPv4 route is: /org/freedesktop/NetworkManager/ActiveConnection/1
+11월 27 11:54:20 YEOMC dnsmasq[2412]: setting upstream servers from DBus
+11월 27 11:54:20 YEOMC dnsmasq[2412]: using nameserver 192.168.1.1#53
+11월 27 11:54:20 YEOMC whoopsie[676]: [11:54:20] Not a paid data plan: /org/freedesktop/NetworkManager/ActiveConnection/1
+11월 27 11:54:20 YEOMC whoopsie[676]: [11:54:20] Found usable connection: /org/freedesktop/NetworkManager/ActiveConnection/1
+11월 27 11:54:20 YEOMC systemd[1]: Starting Network Manager Script Dispatcher Service...
+-- Subject: Unit NetworkManager-dispatcher.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit NetworkManager-dispatcher.service has begun starting up.
+11월 27 11:54:20 YEOMC dbus[669]: [0;1;39m[system] Successfully activated service 'org.freedesktop.nm_dispatcher'[0m
+11월 27 11:54:20 YEOMC systemd[1]: Started Network Manager Script Dispatcher Service.
+-- Subject: Unit NetworkManager-dispatcher.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit NetworkManager-dispatcher.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:54:20 YEOMC nm-dispatcher[2451]: req:1 'up' [enp2s0]: new request (1 scripts)
+11월 27 11:54:20 YEOMC nm-dispatcher[2451]: req:1 'up' [enp2s0]: start running ordered scripts...
+11월 27 11:54:25 YEOMC whoopsie[676]: [11:54:25] online
+11월 27 11:54:25 YEOMC systemd[1]: Stopping Avahi mDNS/DNS-SD Stack...
+-- Subject: Unit avahi-daemon.service has begun shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit avahi-daemon.service has begun shutting down.
+11월 27 11:54:25 YEOMC avahi-daemon[701]: Got SIGTERM, quitting.
+11월 27 11:54:25 YEOMC avahi-daemon[701]: Leaving mDNS multicast group on interface enp2s0.IPv6 with address fe80::428a:793f:b417:65f1.
+11월 27 11:54:25 YEOMC avahi-daemon[701]: Leaving mDNS multicast group on interface enp2s0.IPv4 with address 192.168.1.22.
+11월 27 11:54:25 YEOMC avahi-daemon[701]: avahi-daemon 0.6.32-rc exiting.
+11월 27 11:54:25 YEOMC systemd[1]: Stopped Avahi mDNS/DNS-SD Stack.
+-- Subject: Unit avahi-daemon.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit avahi-daemon.service has finished shutting down.
+11월 27 11:54:25 YEOMC nm-dispatcher[2451]: Warning: Stopping avahi-daemon.service, but it can still be activated by:
+11월 27 11:54:25 YEOMC nm-dispatcher[2451]:   avahi-daemon.socket
+11월 27 11:54:25 YEOMC dbus[669]: [0;1;39m[system] Activating via systemd: service name='org.freedesktop.Avahi' unit='dbus-org.freedesktop.Avahi.service'[0m
+11월 27 11:54:25 YEOMC avahi[2519]: [0;1;39mAvahi detected that your currently configured local DNS server serves[0m
+11월 27 11:54:25 YEOMC avahi[2519]: [0;1;39ma domain .local. This is inherently incompatible with Avahi and thus[0m
+11월 27 11:54:25 YEOMC systemd[1]: Starting Avahi mDNS/DNS-SD Stack...
+-- Subject: Unit avahi-daemon.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit avahi-daemon.service has begun starting up.
+11월 27 11:54:25 YEOMC avahi[2519]: [0;1;39mAvahi disabled itself. If you want to use Avahi in this network, please[0m
+11월 27 11:54:25 YEOMC avahi[2519]: [0;1;39mcontact your administrator and convince him to use a different DNS domain,[0m
+11월 27 11:54:25 YEOMC avahi[2519]: [0;1;39msince .local should be used exclusively for Zeroconf technology.[0m
+11월 27 11:54:25 YEOMC avahi[2519]: [0;1;39mFor more information, see http://avahi.org/wiki/AvahiAndUnicastDotLocal[0m
+11월 27 11:54:25 YEOMC avahi-daemon[2518]: Process 701 died: No such process; trying to remove PID file. (/var/run/avahi-daemon//pid)
+11월 27 11:54:25 YEOMC avahi-daemon[2518]: Found user 'avahi' (UID 111) and group 'avahi' (GID 120).
+11월 27 11:54:25 YEOMC avahi-daemon[2518]: Successfully dropped root privileges.
+11월 27 11:54:25 YEOMC avahi-daemon[2518]: avahi-daemon 0.6.32-rc starting up.
+11월 27 11:54:25 YEOMC dbus[669]: [0;1;39m[system] Successfully activated service 'org.freedesktop.Avahi'[0m
+11월 27 11:54:25 YEOMC systemd[1]: Started Avahi mDNS/DNS-SD Stack.
+-- Subject: Unit avahi-daemon.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit avahi-daemon.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:54:25 YEOMC avahi-daemon[2518]: Successfully called chroot().
+11월 27 11:54:25 YEOMC avahi-daemon[2518]: Successfully dropped remaining capabilities.
+11월 27 11:54:25 YEOMC avahi-daemon[2518]: No service file found in /etc/avahi/services.
+11월 27 11:54:25 YEOMC avahi-daemon[2518]: [0;1;39m*** WARNING: Detected another IPv4 mDNS stack running on this host. This makes mDNS unreliable and is thus not recommended. ***[0m
+11월 27 11:54:25 YEOMC avahi-daemon[2518]: [0;1;39m*** WARNING: Detected another IPv6 mDNS stack running on this host. This makes mDNS unreliable and is thus not recommended. ***[0m
+11월 27 11:54:25 YEOMC avahi-daemon[2518]: Joining mDNS multicast group on interface enp2s0.IPv6 with address fe80::428a:793f:b417:65f1.
+11월 27 11:54:25 YEOMC avahi-daemon[2518]: New relevant interface enp2s0.IPv6 for mDNS.
+11월 27 11:54:25 YEOMC avahi-daemon[2518]: Joining mDNS multicast group on interface enp2s0.IPv4 with address 192.168.1.22.
+11월 27 11:54:25 YEOMC avahi-daemon[2518]: New relevant interface enp2s0.IPv4 for mDNS.
+11월 27 11:54:25 YEOMC avahi-daemon[2518]: Network interface enumeration completed.
+11월 27 11:54:25 YEOMC avahi-daemon[2518]: Registering new address record for fe80::428a:793f:b417:65f1 on enp2s0.*.
+11월 27 11:54:25 YEOMC avahi-daemon[2518]: Registering new address record for 192.168.1.22 on enp2s0.IPv4.
+11월 27 11:54:26 YEOMC avahi-daemon[2518]: Server startup complete. Host name is YEOMC.local. Local service cookie is 2100542446.
+11월 27 11:54:35 YEOMC avahi-daemon[2518]: Withdrawing address record for fe80::428a:793f:b417:65f1 on enp2s0.
+11월 27 11:54:35 YEOMC avahi-daemon[2518]: [0;1;39mHost name conflict, retrying with YEOMC-2[0m
+11월 27 11:54:35 YEOMC avahi-daemon[2518]: Registering new address record for fe80::428a:793f:b417:65f1 on enp2s0.*.
+11월 27 11:54:35 YEOMC avahi-daemon[2518]: Registering new address record for 192.168.1.22 on enp2s0.IPv4.
+11월 27 11:54:35 YEOMC avahi-daemon[2518]: Withdrawing address record for 192.168.1.22 on enp2s0.
+11월 27 11:54:35 YEOMC avahi-daemon[2518]: [0;1;39mHost name conflict, retrying with YEOMC-3[0m
+11월 27 11:54:35 YEOMC avahi-daemon[2518]: Registering new address record for fe80::428a:793f:b417:65f1 on enp2s0.*.
+11월 27 11:54:35 YEOMC avahi-daemon[2518]: Registering new address record for 192.168.1.22 on enp2s0.IPv4.
+11월 27 11:54:37 YEOMC avahi-daemon[2518]: Server startup complete. Host name is YEOMC-3.local. Local service cookie is 2100542446.
+11월 27 11:54:49 YEOMC systemd-timesyncd[616]: Synchronized to time server 91.189.91.157:123 (ntp.ubuntu.com).
+11월 27 11:55:00 YEOMC pkexec[2674]: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+11월 27 11:55:00 YEOMC pkexec[2674]: pam_systemd(polkit-1:session): Cannot create session: Already running in a session
+11월 27 11:55:00 YEOMC pkexec[2674]: [0;1;39myeomc: Executing command [USER=root] [TTY=unknown] [CWD=/home/yeomc] [COMMAND=/usr/lib/update-notifier/package-system-locked][0m
+11월 27 11:55:05 YEOMC systemd[1]: Starting Stop ureadahead data collection...
+-- Subject: Unit ureadahead-stop.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ureadahead-stop.service has begun starting up.
+11월 27 11:55:05 YEOMC systemd[1]: Stopped Read required files in advance.
+-- Subject: Unit ureadahead.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ureadahead.service has finished shutting down.
+11월 27 11:55:05 YEOMC systemd[1]: Started Stop ureadahead data collection.
+-- Subject: Unit ureadahead-stop.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit ureadahead-stop.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:55:49 YEOMC systemd-logind[687]: Removed session c1.
+-- Subject: Session c1 has been terminated
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- Documentation: http://www.freedesktop.org/wiki/Software/systemd/multiseat
+-- 
+-- A session with the ID c1 has been terminated.
+11월 27 11:55:49 YEOMC systemd[1]: Stopping User Manager for UID 108...
+-- Subject: Unit user@108.service has begun shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user@108.service has begun shutting down.
+11월 27 11:55:49 YEOMC systemd[1183]: Stopped target Default.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished shutting down.
+11월 27 11:55:49 YEOMC systemd[1183]: Reached target Shutdown.
+-- Subject: Unit UNIT has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 11:55:49 YEOMC systemd[1183]: Starting Exit the Session...
+-- Subject: Unit UNIT has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has begun starting up.
+11월 27 11:55:49 YEOMC systemd[1183]: Stopped target Basic System.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished shutting down.
+11월 27 11:55:49 YEOMC systemd[1183]: Stopped target Timers.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished shutting down.
+11월 27 11:55:49 YEOMC systemd[1183]: Stopped target Sockets.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished shutting down.
+11월 27 11:55:49 YEOMC systemd[1183]: Stopped target Paths.
+-- Subject: Unit UNIT has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit UNIT has finished shutting down.
+11월 27 11:55:49 YEOMC systemd[1183]: Received SIGRTMIN+24 from PID 2688 (kill).
+11월 27 11:55:49 YEOMC systemd[1184]: pam_unix(systemd-user:session): session closed for user lightdm
+11월 27 11:55:49 YEOMC systemd[1]: Stopped User Manager for UID 108.
+-- Subject: Unit user@108.service has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user@108.service has finished shutting down.
+11월 27 11:55:49 YEOMC systemd[1]: Removed slice User Slice of lightdm.
+-- Subject: Unit user-108.slice has finished shutting down
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit user-108.slice has finished shutting down.
+11월 27 12:05:43 YEOMC sudo[3167]: [0;1;39m   yeomc : TTY=pts/4 ; PWD=/home/yeomc/Study/Laravel/Oobob ; USER=root ; COMMAND=/bin/nano /home/yeomc/.zshrc[0m
+11월 27 12:05:43 YEOMC sudo[3167]: pam_unix(sudo:session): session opened for user root by (uid=0)
+11월 27 12:06:01 YEOMC sudo[3167]: pam_unix(sudo:session): session closed for user root
+11월 27 12:09:01 YEOMC CRON[3317]: pam_unix(cron:session): session opened for user root by (uid=0)
+11월 27 12:09:01 YEOMC CRON[3318]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && /usr/lib/php/sessionclean)
+11월 27 12:09:01 YEOMC systemd[1]: Starting Cleanup of Temporary Directories...
+-- Subject: Unit systemd-tmpfiles-clean.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-tmpfiles-clean.service has begun starting up.
+11월 27 12:09:01 YEOMC systemd-tmpfiles[3319]: [0;1;39m[/usr/lib/tmpfiles.d/var.conf:14] Duplicate line for path "/var/log", ignoring.[0m
+11월 27 12:09:01 YEOMC systemd[1]: Started Cleanup of Temporary Directories.
+-- Subject: Unit systemd-tmpfiles-clean.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit systemd-tmpfiles-clean.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 12:09:01 YEOMC CRON[3317]: pam_unix(cron:session): session closed for user root
+11월 27 12:17:01 YEOMC CRON[3715]: pam_unix(cron:session): session opened for user root by (uid=0)
+11월 27 12:17:01 YEOMC CRON[3716]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+11월 27 12:17:01 YEOMC CRON[3715]: pam_unix(cron:session): session closed for user root
+11월 27 12:28:50 YEOMC unix_chkpwd[3748]: [0;1;39mpassword check failed for user (yeomc)[0m
+11월 27 12:28:50 YEOMC compiz[1724]: [0;1;39mpam_unix(unity:auth): authentication failure; logname= uid=1000 euid=1000 tty= ruser= rhost=  user=yeomc[0m
+11월 27 12:28:55 YEOMC compiz[1724]: gkr-pam: unlocked login keyring
+11월 27 12:39:01 YEOMC CRON[4183]: pam_unix(cron:session): session opened for user root by (uid=0)
+11월 27 12:39:01 YEOMC CRON[4184]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && /usr/lib/php/sessionclean)
+11월 27 12:39:01 YEOMC CRON[4183]: pam_unix(cron:session): session closed for user root
+11월 27 12:41:21 YEOMC systemd[1]: snapd.refresh.timer: Adding 58min 48.119230s random time.
+11월 27 12:53:56 YEOMC org.gnome.evolution.dataserver.Sources5[1459]: [0;1;39m** (evolution-source-registry:1697): WARNING **: secret_service_search_sync: must specify at least one attribute to match[0m
+11월 27 12:58:19 YEOMC unix_chkpwd[4437]: [0;1;39mpassword check failed for user (yeomc)[0m
+11월 27 12:58:19 YEOMC compiz[1724]: [0;1;39mpam_unix(unity:auth): authentication failure; logname= uid=1000 euid=1000 tty= ruser= rhost=  user=yeomc[0m
+11월 27 12:58:26 YEOMC compiz[1724]: gkr-pam: unlocked login keyring
+11월 27 13:09:02 YEOMC CRON[4858]: pam_unix(cron:session): session opened for user root by (uid=0)
+11월 27 13:09:02 YEOMC CRON[4859]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && /usr/lib/php/sessionclean)
+11월 27 13:09:02 YEOMC CRON[4858]: pam_unix(cron:session): session closed for user root
+11월 27 13:17:01 YEOMC CRON[5353]: pam_unix(cron:session): session opened for user root by (uid=0)
+11월 27 13:17:01 YEOMC CRON[5354]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+11월 27 13:17:01 YEOMC CRON[5353]: pam_unix(cron:session): session closed for user root
+11월 27 13:39:01 YEOMC CRON[5906]: pam_unix(cron:session): session opened for user root by (uid=0)
+11월 27 13:39:01 YEOMC CRON[5907]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && /usr/lib/php/sessionclean)
+11월 27 13:39:01 YEOMC CRON[5906]: pam_unix(cron:session): session closed for user root
+11월 27 14:09:01 YEOMC CRON[6997]: pam_unix(cron:session): session opened for user root by (uid=0)
+11월 27 14:09:01 YEOMC CRON[6998]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && /usr/lib/php/sessionclean)
+11월 27 14:09:01 YEOMC CRON[6997]: pam_unix(cron:session): session closed for user root
+11월 27 14:17:01 YEOMC CRON[7351]: pam_unix(cron:session): session opened for user root by (uid=0)
+11월 27 14:17:01 YEOMC CRON[7352]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+11월 27 14:17:01 YEOMC CRON[7351]: pam_unix(cron:session): session closed for user root
+11월 27 14:38:02 YEOMC pulseaudio[1712]: [0;1;31m[pulseaudio] shm.c: shm_open() failed: No such file or directory[0m
+11월 27 14:38:02 YEOMC pulseaudio[1712]: [0;1;31m[pulseaudio] shm.c: shm_open() failed: No such file or directory[0m
+11월 27 14:38:59 YEOMC org.gnome.zeitgeist.SimpleIndexer[1459]: [0;1;39m** (zeitgeist-fts:2301): WARNING **: Unable to get info on application://Navicat Premium.desktop[0m
+11월 27 14:39:00 YEOMC systemd[1]: Started CUPS Scheduler.
+-- Subject: Unit cups.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 14:39:01 YEOMC CRON[8172]: pam_unix(cron:session): session opened for user root by (uid=0)
+11월 27 14:39:01 YEOMC CRON[8173]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && /usr/lib/php/sessionclean)
+11월 27 14:39:01 YEOMC CRON[8172]: pam_unix(cron:session): session closed for user root
+11월 27 14:41:29 YEOMC sudo[8408]: [0;1;39m   yeomc : TTY=pts/19 ; PWD=/home/yeomc/Study/Laravel/Oobob ; USER=root ; COMMAND=/usr/bin/apt-get install php-mysql[0m
+11월 27 14:41:29 YEOMC sudo[8408]: pam_unix(sudo:session): session opened for user root by (uid=0)
+11월 27 14:41:36 YEOMC sudo[8408]: pam_unix(sudo:session): session closed for user root
+11월 27 14:42:59 YEOMC pkexec[8935]: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+11월 27 14:42:59 YEOMC pkexec[8935]: pam_systemd(polkit-1:session): Cannot create session: Already running in a session
+11월 27 14:42:59 YEOMC pkexec[8935]: [0;1;39myeomc: Executing command [USER=root] [TTY=unknown] [CWD=/home/yeomc] [COMMAND=/usr/lib/update-notifier/package-system-locked][0m
+11월 27 14:45:44 YEOMC sudo[9189]: [0;1;39m   yeomc : TTY=pts/19 ; PWD=/home/yeomc/Study/Laravel/Oobob ; USER=root ; COMMAND=/usr/bin/apt-get install php5-fpm php5-cli php5-mcrypt[0m
+11월 27 14:45:44 YEOMC sudo[9189]: pam_unix(sudo:session): session opened for user root by (uid=0)
+11월 27 14:45:44 YEOMC sudo[9189]: pam_unix(sudo:session): session closed for user root
+11월 27 14:46:20 YEOMC sudo[9208]: [0;1;39m   yeomc : TTY=pts/19 ; PWD=/home/yeomc/Study/Laravel/Oobob ; USER=root ; COMMAND=/usr/bin/apt-get update[0m
+11월 27 14:46:20 YEOMC sudo[9208]: pam_unix(sudo:session): session opened for user root by (uid=0)
+11월 27 14:46:25 YEOMC sudo[9208]: pam_unix(sudo:session): session closed for user root
+11월 27 14:46:27 YEOMC sudo[9627]: [0;1;39m   yeomc : TTY=pts/19 ; PWD=/home/yeomc/Study/Laravel/Oobob ; USER=root ; COMMAND=/usr/bin/apt-get upgrade[0m
+11월 27 14:46:27 YEOMC sudo[9627]: pam_unix(sudo:session): session opened for user root by (uid=0)
+11월 27 14:46:27 YEOMC sudo[9627]: pam_unix(sudo:session): session closed for user root
+11월 27 14:46:32 YEOMC sudo[9638]: [0;1;39m   yeomc : TTY=pts/19 ; PWD=/home/yeomc/Study/Laravel/Oobob ; USER=root ; COMMAND=/usr/bin/apt-get install nginx[0m
+11월 27 14:46:32 YEOMC sudo[9638]: pam_unix(sudo:session): session opened for user root by (uid=0)
+11월 27 14:46:36 YEOMC systemd[1]: Reloading.
+11월 27 14:46:36 YEOMC systemd[1]: snapd.refresh.timer: Adding 1h 36min 10.615943s random time.
+11월 27 14:46:36 YEOMC systemd[1]: apt-daily.timer: Adding 8h 38min 57.633959s random time.
+11월 27 14:46:36 YEOMC systemd[1]: Started ACPI event daemon.
+-- Subject: Unit acpid.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit acpid.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 14:46:36 YEOMC systemd[1]: Started CUPS Scheduler.
+-- Subject: Unit cups.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 14:46:36 YEOMC systemd[1]: Reloading.
+11월 27 14:46:37 YEOMC systemd[1]: snapd.refresh.timer: Adding 5h 38min 37.785413s random time.
+11월 27 14:46:37 YEOMC systemd[1]: apt-daily.timer: Adding 2h 36min 9.430069s random time.
+11월 27 14:46:37 YEOMC systemd[1]: Started ACPI event daemon.
+-- Subject: Unit acpid.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit acpid.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 14:46:37 YEOMC systemd[1]: Started CUPS Scheduler.
+-- Subject: Unit cups.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 14:46:37 YEOMC systemd[1]: Reloading.
+11월 27 14:46:37 YEOMC systemd[1]: snapd.refresh.timer: Adding 3h 11min 3.842168s random time.
+11월 27 14:46:37 YEOMC systemd[1]: apt-daily.timer: Adding 11h 46min 4.493259s random time.
+11월 27 14:46:37 YEOMC systemd[1]: Started ACPI event daemon.
+-- Subject: Unit acpid.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit acpid.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 14:46:37 YEOMC systemd[1]: Started CUPS Scheduler.
+-- Subject: Unit cups.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 14:46:37 YEOMC systemd[1]: Reloading.
+11월 27 14:46:37 YEOMC systemd[1]: snapd.refresh.timer: Adding 5h 37min 2.987247s random time.
+11월 27 14:46:37 YEOMC systemd[1]: apt-daily.timer: Adding 1h 12min 49.063231s random time.
+11월 27 14:46:37 YEOMC systemd[1]: Started ACPI event daemon.
+-- Subject: Unit acpid.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit acpid.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 14:46:37 YEOMC systemd[1]: Started CUPS Scheduler.
+-- Subject: Unit cups.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 14:46:37 YEOMC systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: Unit nginx.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit nginx.service has begun starting up.
+11월 27 14:46:37 YEOMC nginx[9865]: nginx: [emerg] listen() to 0.0.0.0:80, backlog 511 failed (98: Address already in use)
+11월 27 14:46:37 YEOMC nginx[9865]: nginx: [emerg] listen() to [::]:80, backlog 511 failed (98: Address already in use)
+11월 27 14:46:37 YEOMC nginx[9865]: nginx: [emerg] listen() to 0.0.0.0:80, backlog 511 failed (98: Address already in use)
+11월 27 14:46:37 YEOMC nginx[9865]: nginx: [emerg] listen() to [::]:80, backlog 511 failed (98: Address already in use)
+11월 27 14:46:38 YEOMC nginx[9865]: nginx: [emerg] listen() to 0.0.0.0:80, backlog 511 failed (98: Address already in use)
+11월 27 14:46:38 YEOMC nginx[9865]: nginx: [emerg] listen() to [::]:80, backlog 511 failed (98: Address already in use)
+11월 27 14:46:38 YEOMC nginx[9865]: nginx: [emerg] listen() to 0.0.0.0:80, backlog 511 failed (98: Address already in use)
+11월 27 14:46:38 YEOMC nginx[9865]: nginx: [emerg] listen() to [::]:80, backlog 511 failed (98: Address already in use)
+11월 27 14:46:39 YEOMC nginx[9865]: nginx: [emerg] listen() to 0.0.0.0:80, backlog 511 failed (98: Address already in use)
+11월 27 14:46:39 YEOMC nginx[9865]: nginx: [emerg] listen() to [::]:80, backlog 511 failed (98: Address already in use)
+11월 27 14:46:39 YEOMC nginx[9865]: nginx: [emerg] still could not bind()
+11월 27 14:46:39 YEOMC systemd[1]: [0;1;39mnginx.service: Control process exited, code=exited status=1[0m
+11월 27 14:46:39 YEOMC systemd[1]: [0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+-- Subject: Unit nginx.service has failed
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit nginx.service has failed.
+-- 
+-- The result is failed.
+11월 27 14:46:39 YEOMC systemd[1]: [0;1;39mnginx.service: Unit entered failed state.[0m
+11월 27 14:46:39 YEOMC systemd[1]: [0;1;39mnginx.service: Failed with result 'exit-code'.[0m
+11월 27 14:46:39 YEOMC systemd[1]: Reloading.
+11월 27 14:46:39 YEOMC systemd[1]: snapd.refresh.timer: Adding 25min 37.598391s random time.
+11월 27 14:46:39 YEOMC systemd[1]: apt-daily.timer: Adding 4h 15min 45.611428s random time.
+11월 27 14:46:39 YEOMC systemd[1]: Started ACPI event daemon.
+-- Subject: Unit acpid.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit acpid.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 14:46:39 YEOMC systemd[1]: Started CUPS Scheduler.
+-- Subject: Unit cups.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 14:46:41 YEOMC sudo[9638]: pam_unix(sudo:session): session closed for user root
+11월 27 14:47:00 YEOMC sudo[9954]: [0;1;39m   yeomc : TTY=pts/19 ; PWD=/home/yeomc/Study/Laravel/Oobob ; USER=root ; COMMAND=/usr/bin/apt-get install nginx[0m
+11월 27 14:47:00 YEOMC sudo[9954]: pam_unix(sudo:session): session opened for user root by (uid=0)
+11월 27 14:47:03 YEOMC systemd[1]: Reloading.
+11월 27 14:47:03 YEOMC systemd[1]: snapd.refresh.timer: Adding 2h 17min 40.194545s random time.
+11월 27 14:47:03 YEOMC systemd[1]: apt-daily.timer: Adding 7h 9min 15.466963s random time.
+11월 27 14:47:03 YEOMC systemd[1]: Started ACPI event daemon.
+-- Subject: Unit acpid.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit acpid.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 14:47:03 YEOMC systemd[1]: Started CUPS Scheduler.
+-- Subject: Unit cups.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 14:47:03 YEOMC systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: Unit nginx.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit nginx.service has begun starting up.
+11월 27 14:47:03 YEOMC nginx[10004]: nginx: [emerg] listen() to 0.0.0.0:80, backlog 511 failed (98: Address already in use)
+11월 27 14:47:03 YEOMC nginx[10004]: nginx: [emerg] listen() to [::]:80, backlog 511 failed (98: Address already in use)
+11월 27 14:47:03 YEOMC nginx[10004]: nginx: [emerg] listen() to 0.0.0.0:80, backlog 511 failed (98: Address already in use)
+11월 27 14:47:03 YEOMC nginx[10004]: nginx: [emerg] listen() to [::]:80, backlog 511 failed (98: Address already in use)
+11월 27 14:47:04 YEOMC nginx[10004]: nginx: [emerg] listen() to 0.0.0.0:80, backlog 511 failed (98: Address already in use)
+11월 27 14:47:04 YEOMC nginx[10004]: nginx: [emerg] listen() to [::]:80, backlog 511 failed (98: Address already in use)
+11월 27 14:47:04 YEOMC nginx[10004]: nginx: [emerg] listen() to 0.0.0.0:80, backlog 511 failed (98: Address already in use)
+11월 27 14:47:04 YEOMC nginx[10004]: nginx: [emerg] listen() to [::]:80, backlog 511 failed (98: Address already in use)
+11월 27 14:47:05 YEOMC nginx[10004]: nginx: [emerg] listen() to 0.0.0.0:80, backlog 511 failed (98: Address already in use)
+11월 27 14:47:05 YEOMC nginx[10004]: nginx: [emerg] listen() to [::]:80, backlog 511 failed (98: Address already in use)
+11월 27 14:47:05 YEOMC nginx[10004]: nginx: [emerg] still could not bind()
+11월 27 14:47:05 YEOMC systemd[1]: [0;1;39mnginx.service: Control process exited, code=exited status=1[0m
+11월 27 14:47:05 YEOMC systemd[1]: [0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+-- Subject: Unit nginx.service has failed
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit nginx.service has failed.
+-- 
+-- The result is failed.
+11월 27 14:47:05 YEOMC systemd[1]: [0;1;39mnginx.service: Unit entered failed state.[0m
+11월 27 14:47:05 YEOMC systemd[1]: [0;1;39mnginx.service: Failed with result 'exit-code'.[0m
+11월 27 14:47:06 YEOMC sudo[9954]: pam_unix(sudo:session): session closed for user root
+11월 27 14:48:29 YEOMC sudo[10063]: [0;1;39m   yeomc : TTY=pts/19 ; PWD=/home/yeomc/Study/Laravel/Oobob ; USER=root ; COMMAND=/usr/sbin/service httpd stop[0m
+11월 27 14:48:29 YEOMC sudo[10063]: pam_unix(sudo:session): session opened for user root by (uid=0)
+11월 27 14:48:30 YEOMC sudo[10063]: pam_unix(sudo:session): session closed for user root
+11월 27 14:48:38 YEOMC sudo[10098]: [0;1;39m   yeomc : TTY=pts/19 ; PWD=/home/yeomc/Study/Laravel/Oobob ; USER=root ; COMMAND=/usr/sbin/service apachectl stop[0m
+11월 27 14:48:38 YEOMC sudo[10098]: pam_unix(sudo:session): session opened for user root by (uid=0)
+11월 27 14:48:38 YEOMC sudo[10098]: pam_unix(sudo:session): session closed for user root
+11월 27 14:48:59 YEOMC pkexec[10137]: pam_unix(polkit-1:session): session opened for user root by (uid=1000)
+11월 27 14:48:59 YEOMC pkexec[10137]: pam_systemd(polkit-1:session): Cannot create session: Already running in a session
+11월 27 14:48:59 YEOMC pkexec[10137]: [0;1;39myeomc: Executing command [USER=root] [TTY=unknown] [CWD=/home/yeomc] [COMMAND=/usr/lib/update-notifier/package-system-locked][0m
+11월 27 14:49:24 YEOMC sudo[10219]: [0;1;39m   yeomc : TTY=pts/19 ; PWD=/home/yeomc/Study/Laravel/Oobob ; USER=root ; COMMAND=/usr/bin/apt-get install nginx[0m
+11월 27 14:49:24 YEOMC sudo[10219]: pam_unix(sudo:session): session opened for user root by (uid=0)
+11월 27 14:49:27 YEOMC systemd[1]: Reloading.
+11월 27 14:49:27 YEOMC systemd[1]: snapd.refresh.timer: Adding 2h 10min 56.137660s random time.
+11월 27 14:49:27 YEOMC systemd[1]: apt-daily.timer: Adding 3h 16min 1.112559s random time.
+11월 27 14:49:27 YEOMC systemd[1]: Started ACPI event daemon.
+-- Subject: Unit acpid.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit acpid.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 14:49:27 YEOMC systemd[1]: Started CUPS Scheduler.
+-- Subject: Unit cups.service has finished start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit cups.service has finished starting up.
+-- 
+-- The start-up result is done.
+11월 27 14:49:27 YEOMC systemd[1]: Starting A high performance web server and a reverse proxy server...
+-- Subject: Unit nginx.service has begun start-up
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit nginx.service has begun starting up.
+11월 27 14:49:27 YEOMC nginx[10302]: nginx: [emerg] listen() to 0.0.0.0:80, backlog 511 failed (98: Address already in use)
+11월 27 14:49:27 YEOMC nginx[10302]: nginx: [emerg] listen() to [::]:80, backlog 511 failed (98: Address already in use)
+11월 27 14:49:27 YEOMC nginx[10302]: nginx: [emerg] listen() to 0.0.0.0:80, backlog 511 failed (98: Address already in use)
+11월 27 14:49:27 YEOMC nginx[10302]: nginx: [emerg] listen() to [::]:80, backlog 511 failed (98: Address already in use)
+11월 27 14:49:28 YEOMC nginx[10302]: nginx: [emerg] listen() to 0.0.0.0:80, backlog 511 failed (98: Address already in use)
+11월 27 14:49:28 YEOMC nginx[10302]: nginx: [emerg] listen() to [::]:80, backlog 511 failed (98: Address already in use)
+11월 27 14:49:28 YEOMC nginx[10302]: nginx: [emerg] listen() to 0.0.0.0:80, backlog 511 failed (98: Address already in use)
+11월 27 14:49:28 YEOMC nginx[10302]: nginx: [emerg] listen() to [::]:80, backlog 511 failed (98: Address already in use)
+11월 27 14:49:29 YEOMC nginx[10302]: nginx: [emerg] listen() to 0.0.0.0:80, backlog 511 failed (98: Address already in use)
+11월 27 14:49:29 YEOMC nginx[10302]: nginx: [emerg] listen() to [::]:80, backlog 511 failed (98: Address already in use)
+11월 27 14:49:29 YEOMC nginx[10302]: nginx: [emerg] still could not bind()
+11월 27 14:49:29 YEOMC systemd[1]: [0;1;39mnginx.service: Control process exited, code=exited status=1[0m
+11월 27 14:49:29 YEOMC systemd[1]: [0;1;31mFailed to start A high performance web server and a reverse proxy server.[0m
+-- Subject: Unit nginx.service has failed
+-- Defined-By: systemd
+-- Support: http://lists.freedesktop.org/mailman/listinfo/systemd-devel
+-- 
+-- Unit nginx.service has failed.
+-- 
+-- The result is failed.
+11월 27 14:49:29 YEOMC systemd[1]: [0;1;39mnginx.service: Unit entered failed state.[0m
+11월 27 14:49:29 YEOMC systemd[1]: [0;1;39mnginx.service: Failed with result 'exit-code'.[0m
+11월 27 14:49:31 YEOMC sudo[10219]: pam_unix(sudo:session): session closed for user root
