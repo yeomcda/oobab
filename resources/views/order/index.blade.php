@@ -12,8 +12,6 @@
                 <div class="list-group">
                     @foreach($orders as $order)
                         <a href="{{ route('order.show', ['id' => $order->id]) }}" class="list-group-item btn-default">
-                            {{ $order->created_at->format('y/m/d H:i') }}
-
                             @if($order->created_at->format('y-m-d') == Carbon\Carbon::now()->format('y-m-d'))
                                 <span class="label label-success pull-right">Today</span>
                             @endif
@@ -22,10 +20,15 @@
                             @else
                                 <span class="label label-danger pull-right">주문 완료</span>
                             @endif
+                            {{ $order->created_at->format('y/m/d H:i') }}
+                            <span class="pull-right">{{ number_format($order->total_price) }}원</span>
                         </a>
                     @endforeach
                 </div>
 
+                @if(count($orders) == 0)
+                    <p><i class="fa fa-times-circle" aria-hidden="true"></i>주문 한 내역이 없어요!</p>
+                @endif
                 {{-- pagination 페이징 위함. --}}
                 {{ $orders->links() }}
             </div>

@@ -71,8 +71,8 @@
                     @endforeach
                 @endif
             </ul>
-            <hr>
             @if($totalQty != 0)
+            <hr>
                 <div class="row">
                     <p class="pull-right"><strong>총 주문: {{ $totalQty }} 개</strong></p>
                 </div>
@@ -81,9 +81,22 @@
                 </div>
                 @if($pay_id == 0)
                     <div class="row">
-                        <a href="{{ route('admin.orderComplete') }}" type="button" class="btn btn-danger pull-right">주문 완료</a>
+                        <form action="{{ route('admin.orderComplete') }}" method="post" class="pull-right">
+                            <div class="form-group form-inline">
+                                <label for="pay-user">결제자: </label>
+                                <select id="pay-user" name="pay-user" class="form-control">
+                                    @foreach($adminUsers as $adminUser)
+                                        <option value="{{$adminUser->id}}">{{$adminUser->username}}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary pull-right">주문 완료</button>
+                            {{ csrf_field() }}
+                        </form>
                     </div>
                 @endif
+            @else
+                <p><i class="fa fa-times-circle" aria-hidden="true"></i>주문한 우주인이 없네요...</p>
             @endif
         </div>
     </div>

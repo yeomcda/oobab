@@ -125,8 +125,23 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'auth'], fu
         'as' => 'orderShow'
     ]);
 
-    Route::get('/order/complete', [
-        'uses' => 'AdminController@getOrderComplete',
+    Route::post('/order/complete', [
+        'uses' => 'AdminController@postOrderComplete',
         'as' => 'orderComplete'
+    ]);
+
+    Route::get('/checkout/list', [
+        'uses' => 'AdminController@getCheckoutList',
+        'as' => 'checkoutList'
+    ]);
+
+    Route::get('/checkout/show/{id?}', [
+        'uses' => 'AdminController@getCheckoutShow',
+        'as' => 'checkoutShow'
+    ]);
+
+    Route::get('/checkout/make', [
+        'uses' => 'AdminController@getCheckoutMake',
+        'as' => 'checkoutMake'
     ]);
 });

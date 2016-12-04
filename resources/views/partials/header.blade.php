@@ -36,6 +36,8 @@
                             <li class="dropdown-header list-group-item-danger">관리자 전용</li>
                             <li><a href="{{ route('admin.orderShow') }}">오늘의 주문</a></li>
                             <li><a href="{{ route('admin.orderList') }}">주문 내역</a></li>
+                            <li><a href="{{ route('admin.checkoutShow') }}">정산 청구</a></li>
+                            <li><a href="{{ route('admin.checkoutList') }}">정산 내역</a></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="{{ route('user.logout') }}">로그아웃</a></li>
                         </ul>

@@ -6,6 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Pay extends Model
 {
+    protected $fillable = [
+        'total_price'
+    ];
+
     public function orders() {
         return $this->hasMany('App\Order');
     }

@@ -13,15 +13,18 @@
                 <div class="list-group">
                     @foreach($pays as $pay)
                         <a href="{{ route('admin.orderShow', ['id' => $pay->id]) }}" class="list-group-item btn-default">
-                            {{ $pay->created_at->format('y/m/d H:i') }}
                             @if($pay->created_at->format('y-m-d') == Carbon\Carbon::now()->format('y-m-d'))
                                 <span class="label label-success pull-right">Today</span>
                             @endif
-                            <span class="pull-right"><i class="fa fa-credit-card" aria-hidden="true"></i> {{ $pay->user->username }}</span>
+                            {{ $pay->created_at->format('y/m/d H:i') }}
+                            <span class="pull-right">{{ number_format($pay->total_price) }}원 <i class="fa fa-credit-card" aria-hidden="true"></i> {{ $pay->user->username }}</span>
                         </a>
                     @endforeach
                 </div>
 
+                @if(count($pays) == 0)
+                    <p><i class="fa fa-times-circle" aria-hidden="true"></i>주문 한 내역이 없어요!</p>
+                @endif
                 {{-- pagination 페이징 위함. --}}
                 {{ $pays->links() }}
             </div>

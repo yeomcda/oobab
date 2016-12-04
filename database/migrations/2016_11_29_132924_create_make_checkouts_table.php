@@ -15,6 +15,7 @@ class CreateMakeCheckoutsTable extends Migration
     {
         Schema::create('make_checkouts', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('total_price');
             $table->timestamps();
         });
     }

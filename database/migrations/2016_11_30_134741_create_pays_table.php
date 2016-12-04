@@ -16,6 +16,7 @@ class CreatePaysTable extends Migration
         Schema::create('pays', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id');
+            $table->integer('total_price');
             $table->timestamps();
         });
     }
