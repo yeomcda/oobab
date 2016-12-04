@@ -32,6 +32,7 @@
                         <ul class="dropdown-menu">
                             <li><a href="{{ route('user.profile') }}">계정 관리</a></li>
                             <li><a href="{{ route('order.index') }}">주문 내역</a></li>
+                            <li><a href="{{ route('checkout.index') }}">정산 내역</a></li>
                             <li role="separator" class="divider"></li>
                             <li class="dropdown-header list-group-item-danger">관리자 전용</li>
                             <li><a href="{{ route('admin.orderShow') }}">오늘의 주문</a></li>

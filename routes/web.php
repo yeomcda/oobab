@@ -145,3 +145,20 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'auth'], fu
         'as' => 'checkoutMake'
     ]);
 });
+
+Route::group(['prefix' => 'checkout', 'as' => 'checkout.', 'middleware' => 'auth'], function(){
+    Route::get('/index', [
+        'uses' => 'CheckoutController@getCheckoutIndex',
+        'as' => 'index'
+    ]);
+
+    Route::get('/show/{id?}', [
+        'uses' => 'CheckoutController@getCheckoutShow',
+        'as' => 'show'
+    ]);
+
+    Route::get('/complete/{id}', [
+        'uses' => 'CheckoutController@getCheckoutComplete',
+        'as' => 'complete'
+    ]);
+});

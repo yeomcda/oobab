@@ -95,7 +95,7 @@ class AdminController extends Controller
     {
         if($makeCheckoutID == 0) {
             $orders = DB::table('orders')
-                        ->select('user_id', 'username', 'checkout_id', DB::raw('sum(total_price) as total_price'))
+                        ->select('user_id', 'username', 'checkout_id', DB::raw('sum(total_price) as total_price'), DB::raw('min(created_at) as startDate'), DB::raw('max(created_at) as endDate'))
                         ->where('pay_id', '<>', 0)
                         ->where('make_checkout_id', '=', '0')
                         ->groupBy('user_id')
@@ -105,7 +105,7 @@ class AdminController extends Controller
         }
         else{
             $orders = DB::table('orders')
-                ->select('user_id', 'username', 'checkout_id', DB::raw('sum(total_price) as total_price'))
+                ->select('user_id', 'username', 'checkout_id', DB::raw('sum(total_price) as total_price'), DB::raw('min(created_at) as startDate'), DB::raw('max(created_at) as endDate'))
                 ->where('pay_id', '<>', 0)
                 ->where('make_checkout_id', '=', $makeCheckoutID)
                 ->groupBy('user_id')

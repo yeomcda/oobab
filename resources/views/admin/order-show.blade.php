@@ -72,13 +72,14 @@
                 @endif
             </ul>
             @if($totalQty != 0)
-            <hr>
+                <hr>
                 <div class="row">
                     <p class="pull-right"><strong>총 주문: {{ $totalQty }} 개</strong></p>
                 </div>
                 <div class="row">
                     <p class="pull-right"><strong>합 계: {{ number_format($totalPrice) }} 원</strong></p>
                 </div>
+
                 @if($pay_id == 0)
                     <div class="row">
                         <form action="{{ route('admin.orderComplete') }}" method="post" class="pull-right">

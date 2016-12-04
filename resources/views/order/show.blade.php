@@ -32,6 +32,7 @@
             <div class="row">
                 <p class="pull-right"><strong>합 계: {{ number_format($order->cart->totalPrice) }} 원</strong></p>
             </div>
+
             @if($order['pay_id'] == 0)
                 <div class="row">
                     <a href="{{ route('order.cancel', ['id'=>$order['id']]) }}" type="button" class="btn btn-danger pull-right">주문 취소</a>

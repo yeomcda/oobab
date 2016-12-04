@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    회원 가입
+@endsection
+
 @section('content')
     <div class="row">
         <div class="col-md-4 col-md-offset-4">
