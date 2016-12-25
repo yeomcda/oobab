@@ -13,7 +13,11 @@
             @if(count($orders) != 0)
                 <div class="row">
                     <p>정산 기간: {{ $startDate->format('y-m-d') }} ~ {{ $endDate->format('y-m-d') }}</p>
-                    <strong>합 계: {{ number_format($totalPrice) }} 원</strong>
+                    <p><strong>정산 합계: {{ number_format($totalPrice) }} 원</strong></p>
+                    @if($payPrice != 0)
+                        <p><strong>결제 금액: -{{ number_format($payPrice) }} 원</strong></p>
+                    @endif
+                    <p><strong>입금액: {{ number_format($totalPrice - $payPrice) }} 원</strong></p>
                     @if($isCheckout == 0)
                         <span class="label label-danger pull-right">미입금</span>
                     @else

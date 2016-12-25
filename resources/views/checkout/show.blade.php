@@ -19,7 +19,11 @@
                             <div class="panel-body">
                                 <p>국민은행 642602-01-111866 예금주: 김영호</p>
                                 <p>정산 기간: {{ $startDate->format('y-m-d') }} ~ {{ $endDate->format('y-m-d') }}</p>
-                                <strong>합 계: {{ number_format($totalPrice) }} 원</strong>
+                                <p><strong>정산 합계: {{ number_format($totalPrice) }} 원</strong></p>
+                                @if($payPrice != 0)
+                                    <p><strong>결제 금액: -{{ number_format($payPrice) }} 원</strong></p>
+                                @endif
+                                <p><strong>입금액: {{ number_format($totalPrice - $payPrice) }} 원</strong></p>
                                 <a href="{{ route('checkout.complete', ['id' => $make_checkout_id]) }}" type="button" class="btn btn-primary pull-right">입금 완료</a>
                                 <p><i class="fa fa-info-circle" aria-hidden="true"></i>입금 후 입금 완료 버튼을 눌러주세요~!</p>
                             </div>

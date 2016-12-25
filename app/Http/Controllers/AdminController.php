@@ -121,6 +121,23 @@ class AdminController extends Controller
                 ->get();
         }
 
+        foreach($orders as $order)
+        {
+            $payPrice = 0;
+            $user_id = $order->user_id;
+            if(User::find($user_id)->hasRole("Manager"))
+            {
+                $checkoutOrders = Order::select('pay_id')->where('make_checkout_id', '=', $makeCheckoutID)->groupBy('pay_id')->get();
+                foreach ($checkoutOrders as $checkoutOrder)
+                {
+                    $pay = $checkoutOrder->pay;
+                    if($pay->user_id == $user_id)
+                        $payPrice += $pay->total_price;
+                }
+            }
+            $order->total_price -= $payPrice;
+        }
+
         $totalPrice = $orders->sum('total_price');
 
         return view('admin.checkout-show', ['orders' => $orders, 'totalPrice' => $totalPrice, 'makeCheckoutID' => $makeCheckoutID]);
@@ -137,13 +154,25 @@ class AdminController extends Controller
             return $order;
         });
 
+        $payPrice = 0;
+        if(User::find($user_id)->hasRole("Manager"))
+        {
+            $checkoutOrders = Order::select('pay_id')->where('make_checkout_id', '=', $make_checkout_id)->groupBy('pay_id')->get();
+            foreach ($checkoutOrders as $order)
+            {
+                $pay = $order->pay;
+                if($pay->user_id == $user_id)
+                    $payPrice += $pay->total_price;
+            }
+        }
+
         $userName = $orders->first()->username;
         $isCheckout = $orders->first()->checkout_id;
         $startDate = $orders->first()->created_at;
         $endDate = $make_checkout_id == 0 ? Carbon::now() : MakeCheckout::find($make_checkout_id)->created_at;
         $totalPrice = $orders->sum('total_price');
 
-        return view('admin.user-checkout-show', ['userName' => $userName, 'orders' => $orders, 'isCheckout' => $isCheckout, 'startDate' => $startDate, 'endDate' => $endDate,'totalPrice' => $totalPrice]);
+        return view('admin.user-checkout-show', ['userName' => $userName, 'orders' => $orders, 'isCheckout' => $isCheckout, 'startDate' => $startDate, 'endDate' => $endDate,'totalPrice' => $totalPrice, 'payPrice' => $payPrice]);
     }
 
     public function getCheckoutMake()
