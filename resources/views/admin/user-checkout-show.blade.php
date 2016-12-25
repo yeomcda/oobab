@@ -7,27 +7,17 @@
 @section('content')
     <div class="row">
         <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
-            <h1> 정산내역 </h1>
+            <p class="pull-right label-danger" style="color: white;">관리자 전용</p>
+            <h1> <i class="fa fa-user" aria-hidden="true"></i> {{$userName}}님 정산내역 </h1>
             <hr>
             @if(count($orders) != 0)
                 <div class="row">
+                    <p>정산 기간: {{ $startDate->format('y-m-d') }} ~ {{ $endDate->format('y-m-d') }}</p>
+                    <strong>합 계: {{ number_format($totalPrice) }} 원</strong>
                     @if($isCheckout == 0)
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><strong>입금 계좌정보</strong></h3>
-                            </div>
-                            <div class="panel-body">
-                                <p>국민은행 642602-01-111866 예금주: 김영호</p>
-                                <p>정산 기간: {{ $startDate->format('y-m-d') }} ~ {{ $endDate->format('y-m-d') }}</p>
-                                <strong>합 계: {{ number_format($totalPrice) }} 원</strong>
-                                <a href="{{ route('checkout.complete', ['id' => $make_checkout_id]) }}" type="button" class="btn btn-primary pull-right">입금 완료</a>
-                                <p><i class="fa fa-info-circle" aria-hidden="true"></i>입금 후 입금 완료 버튼을 눌러주세요~!</p>
-                            </div>
-                        </div>
+                        <span class="label label-danger pull-right">미입금</span>
                     @else
-                        <p>정산 기간: {{ $startDate->format('y-m-d') }} ~ {{ $endDate->format('y-m-d') }}</p>
-                        <strong>합 계: {{ number_format($totalPrice) }} 원</strong>
-                        <p><i class="fa fa-info-circle" aria-hidden="true"></i>입금 완료된 정산이에요.</p>
+                        <span class="label label-primary pull-right">입금완료</span>
                     @endif
                         <hr>
                 </div>

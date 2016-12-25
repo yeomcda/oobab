@@ -114,35 +114,47 @@ Route::group(['prefix' => 'order', 'as' => 'order.', 'middleware' => 'auth'], fu
     ]);
 });
 
-Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'auth'], function(){
+Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth', 'roles']], function(){
     Route::get('/order/list', [
         'uses' => 'AdminController@getOrderList',
-        'as' => 'orderList'
+        'as' => 'orderList',
+        'roles' => ['Manager', 'Admin']
     ]);
 
     Route::get('/order/show/{id?}', [
         'uses' => 'AdminController@getOrderShow',
-        'as' => 'orderShow'
+        'as' => 'orderShow',
+        'roles' => ['Manager', 'Admin']
     ]);
 
     Route::post('/order/complete', [
         'uses' => 'AdminController@postOrderComplete',
-        'as' => 'orderComplete'
+        'as' => 'orderComplete',
+        'roles' => ['Manager', 'Admin']
     ]);
 
     Route::get('/checkout/list', [
         'uses' => 'AdminController@getCheckoutList',
-        'as' => 'checkoutList'
+        'as' => 'checkoutList',
+        'roles' => ['Admin']
     ]);
 
     Route::get('/checkout/show/{id?}', [
         'uses' => 'AdminController@getCheckoutShow',
-        'as' => 'checkoutShow'
+        'as' => 'checkoutShow',
+        'roles' => ['Admin']
+    ]);
+
+    Route::get('/checkout/show/{id?}/{user_id?}', [
+        'uses' => 'AdminController@getUserCheckoutShow',
+        'as' => 'userCheckoutShow',
+        'roles' => ['Admin']
     ]);
 
     Route::get('/checkout/make', [
         'uses' => 'AdminController@getCheckoutMake',
-        'as' => 'checkoutMake'
+        'as' => 'checkoutMake',
+        'roles' => ['Admin']
     ]);
 });
 

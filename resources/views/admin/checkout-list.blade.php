@@ -14,13 +14,13 @@
                 <div class="list-group">
                     @foreach($checkoutLists as $checkout)
                         <a href="{{ route('admin.checkoutShow', ['id' => $checkout->id]) }}" class="list-group-item btn-default">
-                            @if($checkout->created_at->format('y-m-d') == Carbon\Carbon::now()->format('y-m-d'))
+                            @if($checkout->isToday)
                                 <span class="label label-success pull-right">Today</span>
                             @endif
-                            @if( ($checkout->orders()->where('checkout_id', '=', '0')->first()) )
-                                <span class="label label-danger pull-right">미입금</span>
+                            @if( $checkout->isCheckout )
+                                    <span class="label label-primary pull-right">입금완료</span>
                             @else
-                                <span class="label label-primary pull-right">입금완료</span>
+                                <span class="label label-danger pull-right">미입금</span>
                             @endif
                             {{ $checkout->created_at->format('y/m/d H:i') }}
                             <span class="pull-right">{{ number_format($checkout->total_price) }}원</span>

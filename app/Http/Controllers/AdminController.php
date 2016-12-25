@@ -66,7 +66,10 @@ class AdminController extends Controller
         $totalQty = $orders->sum('total_qty');
         $totalPrice = $orders->sum('total_price');
 
-        $adminUsers = User::all();
+        $adminUsers = User::whereHas('roles', function($q){
+            $q->where('name', 'Manager')->orWhere('name', 'Admin');
+        })->get();
+
         return view('admin.order-show', ['orders' => $orders, 'totalQty' => $totalQty, 'totalPrice' => $totalPrice, 'mergeNoOptOrders' => $mergeNoOptOrders, 'mergeExistOptOrders' => $mergeExistOptOrders, 'pay_id' => $id, 'date' => $date, 'adminUsers' => $adminUsers]);
     }
 
@@ -81,13 +84,17 @@ class AdminController extends Controller
 
         $orders->update(['pay_id' => $pay->id]);
 
-        return redirect()->back();
+        return redirect()->route("admin.orderList");
     }
-
 
     public function getCheckoutList()
     {
         $checkoutLists = MakeCheckout::orderBy('created_at', 'desc')->paginate(15);
+        foreach ($checkoutLists as $checkout)
+        {
+            $checkout["isToday"] = $checkout->created_at->format('y-m-d') == Carbon::now()->format('y-m-d') ? true : false;
+            $checkout["isCheckout"] = count($checkout->orders()->where('checkout_id', '=', '0')->first()) == 0 ? true : false;
+        }
         return view('admin.checkout-list', ['checkoutLists' => $checkoutLists]);
     }
 
@@ -117,6 +124,26 @@ class AdminController extends Controller
         $totalPrice = $orders->sum('total_price');
 
         return view('admin.checkout-show', ['orders' => $orders, 'totalPrice' => $totalPrice, 'makeCheckoutID' => $makeCheckoutID]);
+    }
+
+    public function getUserCheckoutShow($make_checkout_id = 0, $user_id = 0){
+        $orders = User::find($user_id)
+            ->orders()
+            ->where('make_checkout_id', '=', $make_checkout_id)
+            ->get();
+
+        $orders->transform(function($order, $key) {
+            $order->cart = unserialize($order->cart);
+            return $order;
+        });
+
+        $userName = $orders->first()->username;
+        $isCheckout = $orders->first()->checkout_id;
+        $startDate = $orders->first()->created_at;
+        $endDate = $make_checkout_id == 0 ? Carbon::now() : MakeCheckout::find($make_checkout_id)->created_at;
+        $totalPrice = $orders->sum('total_price');
+
+        return view('admin.user-checkout-show', ['userName' => $userName, 'orders' => $orders, 'isCheckout' => $isCheckout, 'startDate' => $startDate, 'endDate' => $endDate,'totalPrice' => $totalPrice]);
     }
 
     public function getCheckoutMake()

@@ -11,6 +11,7 @@
 <body>
     @include('partials.header')
     <div class="container" style="margin-bottom: 100px;">
+        @include('partials.error-message')
         @yield('content')
     </div>
     @include('partials.bottom')

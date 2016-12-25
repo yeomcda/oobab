@@ -13,7 +13,7 @@
             @if(count($orders) != 0)
                 <div class="list-group">
                     @foreach($orders as $order)
-                        <a href="#" class="list-group-item btn-default">
+                        <a href="{{route("admin.userCheckoutShow", ["id" => $makeCheckoutID, "user_id" => $order->user_id])}}" class="list-group-item btn-default">
                             @if( ($order->checkout_id == 0) )
                                 <span class="label label-danger pull-right">미입금</span>
                             @else

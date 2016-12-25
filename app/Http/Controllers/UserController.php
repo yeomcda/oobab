@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Role;
 use App\User;
 use Illuminate\Http\Request;
 use Auth;
@@ -19,14 +20,13 @@ class UserController extends Controller
            'email' => 'email|required|unique:users',
            'password' => 'required|min:4',
         ]);
-
         $user = new User([
             'username' => $request->input('username'),
             'email' => $request->input('email'),
             'password' => bcrypt($request->input('password'))
         ]);
         $user->save();
-
+        $user->roles()->attach(Role::where('name', 'User')->first());
         Auth::login($user);
 
         if(Session::has('oldUrl'))
