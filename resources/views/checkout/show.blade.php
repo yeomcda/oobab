@@ -17,7 +17,7 @@
                                 <h3 class="panel-title"><strong>입금 계좌정보</strong></h3>
                             </div>
                             <div class="panel-body">
-                                <p>국민은행 642602-01-111866 예금주: 김영호</p>
+                                <p>국민은행 220402-04-167862 예금주: 김영호</p>
                                 <p>정산 기간: {{ $startDate->format('y-m-d') }} ~ {{ $endDate->format('y-m-d') }}</p>
                                 <p><strong>정산 합계: {{ number_format($totalPrice) }} 원</strong></p>
                                 @if($payPrice != 0)
