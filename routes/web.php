@@ -156,6 +156,48 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth', 'r
         'as' => 'checkoutMake',
         'roles' => ['Admin']
     ]);
+
+    Route::get('/menu/list', [
+        'uses' => 'AdminController@getMenuList',
+        'as' => 'menuList',
+        'roles' => ['Manager', 'Admin']
+    ]);
+
+    Route::get('/menu/show/{id?}', [
+        'uses' => 'AdminController@getMenuShow',
+        'as' => 'menuShow',
+        'roles' => ['Manager', 'Admin']
+    ]);
+
+    Route::get('/menu/edit/{id?}', [
+        'uses' => 'AdminController@getMenuForm',
+        'as' => 'menuEdit',
+        'roles' => ['Manager', 'Admin']
+    ]);
+
+    Route::post('/menu/update/{id}', [
+        'uses' => 'AdminController@postMenuUpdate',
+        'as' => 'menuUpdate',
+        'roles' => ['Manager', 'Admin']
+    ]);
+
+    Route::get('/menu/create', [
+        'uses' => 'AdminController@getMenuForm',
+        'as' => 'menuCreate',
+        'roles' => ['Manager', 'Admin']
+    ]);
+
+    Route::post('/menu/create', [
+        'uses' => 'AdminController@postMenuCreate',
+        'as' => 'menuCreate',
+        'roles' => ['Manager', 'Admin']
+    ]);
+
+    Route::get('/menu/delete/{id}', [
+        'uses' => 'AdminController@getMenuDelete',
+        'as' => 'menuDelete',
+        'roles' => ['Manager', 'Admin']
+    ]);
 });
 
 Route::group(['prefix' => 'checkout', 'as' => 'checkout.', 'middleware' => 'auth'], function(){

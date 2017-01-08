@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    정산내역
+    정산 내역
 @endsection
 
 @section('content')

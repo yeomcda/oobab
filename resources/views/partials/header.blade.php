@@ -42,6 +42,7 @@
                                     <li><a href="{{ route('admin.checkoutShow') }}">정산 청구</a></li>
                                     <li><a href="{{ route('admin.checkoutList') }}">정산 내역</a></li>
                                 @endif
+                                <li><a href="{{ route('admin.menuList') }}">메뉴 관리</a></li>
                                 <li role="separator" class="divider"></li>
                             @endif
                             <li><a href="{{ route('user.logout') }}">로그아웃</a></li>

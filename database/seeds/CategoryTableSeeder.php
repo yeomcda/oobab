@@ -112,5 +112,11 @@ class CategoryTableSeeder extends Seeder
             'title' => '쉐이크샐러드',
         ]);
         $category->save();
+
+        $category = new \App\Category([
+            'category' => 18,
+            'title' => '기타',
+        ]);
+        $category->save();
     }
 }

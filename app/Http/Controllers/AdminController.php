@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Checkout;
+use App\Category;
 use App\MakeCheckout;
+use App\Menu;
+use App\MenuOptionMenu;
+use App\OptionMenu;
 use App\Order;
 use App\Pay;
 use App\User;
@@ -187,5 +190,112 @@ class AdminController extends Controller
         $orders->update(['make_checkout_id' => $makeCheckout->id]);
 
         return redirect()->route('admin.checkoutList');
+    }
+
+    public function getMenuList()
+    {
+        $menus = Menu::orderBy('id', 'desc')->paginate(15);
+        return view('admin.menu-list', ['menus' => $menus]);
+    }
+
+    public function getMenuShow($id)
+    {
+        $menu = Menu::find($id);
+        $optionMenuIDs = MenuOptionMenu::where('menu_id', '=', $id)->get();
+        $optionMenus = array();
+        foreach ($optionMenuIDs as $optionMenuID)
+        {
+            $optionMenu = OptionMenu::find($optionMenuID->option_menu_id);
+            array_push($optionMenus, $optionMenu);
+        }
+        return view('admin.menu-show', ['menu' => $menu, 'optionMenus' => $optionMenus]);
+    }
+
+    public function getMenuForm($id = 0)
+    {
+        $menu = Menu::find($id);
+        $optionMenus = MenuOptionMenu::where('menu_id', '=', $id)->get();
+        $selectedOptionMenus = array();
+        foreach ($optionMenus as $optionMenu)
+        {
+            array_push($selectedOptionMenus, $optionMenu->option_menu_id);
+        }
+
+        $optionMenus = OptionMenu::all();
+        $categories = Category::all();
+        $categorySelectBox = array();
+        foreach ($categories as $category)
+        {
+            $categorySelectBox[$category->category] = $category->title;
+        }
+
+        return view('admin.menu-form', ['menu' => $menu, 'optionMenus' => $optionMenus, 'selectedOptionMenus' => $selectedOptionMenus, 'categorySelectBox' => $categorySelectBox]);
+    }
+
+    public function postMenuCreate(Request $request)
+    {
+        $this->validate($request, [
+            'category' => 'required',
+            'imagePath' => 'required',
+            'title' => 'required',
+            'description' => 'required',
+            'price' => 'required',
+        ]);
+
+        $menu = Menu::Create([
+            'category'=> (int)$request->category,
+            'title' => $request->title,
+            'description' => $request->description,
+            'price' => (int)$request->price,
+            'imagePath' => $request->imagePath
+        ]);
+
+        $optionMenus = is_null($request->option_menus) ? [] : $request->option_menus;
+        foreach($optionMenus as $option_id){
+            MenuOptionMenu::create([
+                'menu_id' => (int)$menu->id,
+                'option_menu_id' => (int)$option_id
+            ]);
+        }
+
+        return redirect()->route('admin.menuShow', $menu->id);
+    }
+
+    public function postMenuUpdate(Request $request, $id)
+    {
+        $this->validate($request, [
+            'category' => 'required',
+            'imagePath' => 'required',
+            'title' => 'required',
+            'description' => 'required',
+            'price' => 'required',
+        ]);
+
+        $menu = Menu::find($id);
+        $menu->category = (int)$request->category;
+        $menu->title = $request->title;
+        $menu->description = $request->description;
+        $menu->price = (int)$request->price;
+        $menu->imagePath = $request->imagePath;
+        $menu->save();
+
+        MenuOptionMenu::where('menu_id', '=', $id)->delete();
+        $optionMenus = is_null($request->option_menus) ? [] : $request->option_menus;
+        foreach($optionMenus as $option_id){
+            MenuOptionMenu::create([
+                'menu_id' => (int)$id,
+                'option_menu_id' => (int)$option_id
+            ]);
+        }
+
+        return redirect()->route('admin.menuShow', $id);
+    }
+
+    public function getMenuDelete($id)
+    {
+        MenuOptionMenu::where('menu_id', '=', $id)->delete();
+        Menu::destroy($id);
+
+        return redirect()->route('admin.menuList');
     }
 }
