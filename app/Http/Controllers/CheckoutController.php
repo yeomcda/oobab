@@ -40,6 +40,7 @@ class CheckoutController extends Controller
 
         return view('checkout.index', ['orders' => $orders]);
     }
+
     public function getCheckoutShow($make_checkout_id)
     {
         $orders = Auth::user()

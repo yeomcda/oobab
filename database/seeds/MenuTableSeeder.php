@@ -626,7 +626,7 @@ class MenuTableSeeder extends Seeder
 
         $menu = new \App\Menu([
             'category' => 15,
-            'title' => '닭강정(중)',
+            'title' => '닭강정(소)',
             'description' => '최고의 맛을 위해 1년 넘게 준비한 닭강정 아이들 영양간식, 아빠 술안주, 가족 소풍에 아주 좋습니다.',
             'imagePath' => 'http://www.hsd.co.kr/resources/uploads/lunch/1464864912648_qgwddpvv.jpg',
             'price' => 2500
