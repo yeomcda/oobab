@@ -12,7 +12,7 @@
             <hr>
             {!! Form::model($category, ['route' => empty($category) ? 'admin.categoryCreate' : ['admin.categoryUpdate', $category->id], 'method' => 'post', 'class' => 'form-horizontal']) !!}
                 <div class="form-group">
-                    {{ Form::label('title', '카테고리이름') }}
+                    {{ Form::label('title', '카테고리 이름') }}
                     {{ Form::text('title', empty($category) ? '' : $category->title, ['class' => 'form-control']) }}
                 </div>
                 <div class="form-group pull-right">

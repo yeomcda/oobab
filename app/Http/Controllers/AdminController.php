@@ -355,4 +355,62 @@ class AdminController extends Controller
 
         return redirect()->route('admin.menuList');
     }
+
+    # 카테고리 관리
+    public function getOptionMenuList()
+    {
+        $optionMenus = OptionMenu::orderBy('id', 'desc')->paginate(15);
+        return view('admin.optionMenu-list', ['optionMenus' => $optionMenus]);
+    }
+
+    public function getOptionMenuShow($id)
+    {
+        $optionMenu = OptionMenu::find($id);
+        return view('admin.optionMenu-show', ['optionMenu' => $optionMenu]);
+    }
+
+    public function getOptionMenuForm($id = 0)
+    {
+        $optionMenu = OptionMenu::find($id);
+
+        return view('admin.optionMenu-form', ['optionMenu' => $optionMenu]);
+    }
+
+    public function postOptionMenuCreate(Request $request)
+    {
+        $this->validate($request, [
+            'title' => 'required',
+            'price' => 'required',
+        ]);
+
+        $optionMenu = OptionMenu::Create([
+            'title' => $request->title,
+            'price' => $request->price,
+        ]);
+
+        return redirect()->route('admin.optionMenuShow', $optionMenu->id);
+    }
+
+    public function postOptionMenuUpdate(Request $request, $id)
+    {
+        $this->validate($request, [
+            'title' => 'required',
+            'price' => 'required',
+        ]);
+
+        $optionMenu = OptionMenu::find($id);
+        $optionMenu->title = $request->title;
+        $optionMenu->price = $request->price;
+        $optionMenu->save();
+
+        return redirect()->route('admin.optionMenuShow', $id);
+    }
+
+    public function getOptionMenuDelete($id)
+    {
+        MenuOptionMenu::where('option_menu_id', '=', $id)->delete();
+        OptionMenu::destroy($id);
+
+        return redirect()->route('admin.optionMenuList');
+    }
 }

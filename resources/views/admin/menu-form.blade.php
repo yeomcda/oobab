@@ -16,7 +16,7 @@
                     {{ Form::select('category', $categorySelectBox, empty($menu) ? null : $menu->category, ['class' => 'form-control']) }}
                 </div>
                 <div class="form-group">
-                    {{ Form::label('title', '메뉴이름') }}
+                    {{ Form::label('title', '메뉴 이름') }}
                     {{ Form::text('title', empty($menu) ? '' : $menu->title, ['class' => 'form-control']) }}
                 </div>
                 <div class="form-group">

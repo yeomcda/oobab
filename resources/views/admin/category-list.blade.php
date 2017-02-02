@@ -29,7 +29,7 @@
                         @endforeach
                     </div>
                 @else
-                    <p><i class="fa fa-times-circle" aria-hidden="true"></i>등록 된 메뉴가 없어요!</p>
+                    <p><i class="fa fa-times-circle" aria-hidden="true"></i>등록 된 카테고리가 없어요!</p>
                 @endif
                 {{-- pagination 페이징 위함. --}}
                 {{ $categories->links() }}

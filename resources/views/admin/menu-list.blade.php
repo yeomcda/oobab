@@ -17,15 +17,15 @@
                     <div class="list-group">
                         @foreach($menus as $menu)
                             <div class="input-group">
-                            <a href="{{ route('admin.menuShow', ['id' => $menu->id]) }}" class="list-group-item btn-default">
-                                {{ $menu->id }})
-                                {{ $menu->title }}
-                                <span class="label label-success">{{ $menu->price }}</span>
-                                <div class="pull-right">{{ $menu->updated_at->format('y/m/d H:i:s') }}</div>
-                            </a>
-                            <div class="input-group-btn">
-                                <a href="{{ Route('admin.menuDelete', ['id' => $menu->id]) }}" class="btn btn-danger btn-sm">삭제</a>
-                            </div>
+                                <a href="{{ route('admin.menuShow', ['id' => $menu->id]) }}" class="list-group-item btn-default">
+                                    {{ $menu->id }})
+                                    {{ $menu->title }}
+                                    <span class="label label-success">{{ $menu->price }}</span>
+                                    <div class="pull-right">{{ $menu->updated_at->format('y/m/d H:i:s') }}</div>
+                                </a>
+                                <div class="input-group-btn">
+                                    <a href="{{ Route('admin.menuDelete', ['id' => $menu->id]) }}" class="btn btn-danger btn-sm">삭제</a>
+                                </div>
                             </div>
                         @endforeach
                     </div>
