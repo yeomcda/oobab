@@ -8,6 +8,8 @@
         <div class="row">
             <div class="col-sm-6 col-md-6 col-md-offset-3 col-sm-offset-3">
                 <p class="pull-right label-danger" style="color: white;">관리자 전용</p>
+                @include('admin.category-bar', ['selectedCategory' => 'menu'])
+
                 <h1> 전체 메뉴 </h1>
                 <a href="{{ route('admin.menuCreate') }}" class="btn btn-warning" role="button">추가</a>
                 <hr>

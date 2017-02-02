@@ -18,7 +18,7 @@
                                 <img class="media-object" src="{{ $menu->imagePath }}" style="height: 250px">
                             </div>
                             <div class="media-body">
-                                <p><b>카테고리: {{$menu->categories->title}}</b></p>
+                                <p><b>카테고리: {{ is_null($menu->categories) ? "없음" : $menu->categories->title}}</b></p>
                                 <p>{{$menu->description}}</p>
                                 @if(!empty($optionMenus))
                                     <p><b>옵션 선택 메뉴</b>

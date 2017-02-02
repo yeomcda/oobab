@@ -157,6 +157,50 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth', 'r
         'roles' => ['Admin']
     ]);
 
+    # 카테고리 관리.
+    Route::get('/category/list', [
+        'uses' => 'AdminController@getCategoryList',
+        'as' => 'categoryList',
+        'roles' => ['Manager', 'Admin']
+    ]);
+
+    Route::get('/category/show/{id?}', [
+        'uses' => 'AdminController@getCategoryShow',
+        'as' => 'categoryShow',
+        'roles' => ['Manager', 'Admin']
+    ]);
+
+    Route::get('/category/edit/{id?}', [
+        'uses' => 'AdminController@getCategoryForm',
+        'as' => 'categoryEdit',
+        'roles' => ['Manager', 'Admin']
+    ]);
+
+    Route::post('/category/update/{id}', [
+        'uses' => 'AdminController@postCategoryUpdate',
+        'as' => 'categoryUpdate',
+        'roles' => ['Manager', 'Admin']
+    ]);
+
+    Route::get('/category/create', [
+        'uses' => 'AdminController@getCategoryForm',
+        'as' => 'categoryCreate',
+        'roles' => ['Manager', 'Admin']
+    ]);
+
+    Route::post('/category/create', [
+        'uses' => 'AdminController@postCategoryCreate',
+        'as' => 'categoryCreate',
+        'roles' => ['Manager', 'Admin']
+    ]);
+
+    Route::get('/category/delete/{id}', [
+        'uses' => 'AdminController@getCategoryDelete',
+        'as' => 'categoryDelete',
+        'roles' => ['Manager', 'Admin']
+    ]);
+
+    # 메뉴 관리.
     Route::get('/menu/list', [
         'uses' => 'AdminController@getMenuList',
         'as' => 'menuList',
@@ -196,6 +240,49 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth', 'r
     Route::get('/menu/delete/{id}', [
         'uses' => 'AdminController@getMenuDelete',
         'as' => 'menuDelete',
+        'roles' => ['Manager', 'Admin']
+    ]);
+
+    # 옵션메뉴 관리.
+    Route::get('/option-menu/list', [
+        'uses' => 'AdminController@getOptionMenuList',
+        'as' => 'optionMenuList',
+        'roles' => ['Manager', 'Admin']
+    ]);
+
+    Route::get('/option-menu/show/{id?}', [
+        'uses' => 'AdminController@getOptionMenuShow',
+        'as' => 'optionMenuShow',
+        'roles' => ['Manager', 'Admin']
+    ]);
+
+    Route::get('/option-menu/edit/{id?}', [
+        'uses' => 'AdminController@getOptionMenuForm',
+        'as' => 'optionMenuEdit',
+        'roles' => ['Manager', 'Admin']
+    ]);
+
+    Route::post('/option-menu/update/{id}', [
+        'uses' => 'AdminController@postOptionMenuUpdate',
+        'as' => 'optionMenuUpdate',
+        'roles' => ['Manager', 'Admin']
+    ]);
+
+    Route::get('/option-menu/create', [
+        'uses' => 'AdminController@getOptionMenuForm',
+        'as' => 'optionMenuCreate',
+        'roles' => ['Manager', 'Admin']
+    ]);
+
+    Route::post('/option-menu/create', [
+        'uses' => 'AdminController@postOptionMenuCreate',
+        'as' => 'optionMenuCreate',
+        'roles' => ['Manager', 'Admin']
+    ]);
+
+    Route::get('/option-menu/delete/{id}', [
+        'uses' => 'AdminController@getOptionMenuDelete',
+        'as' => 'optionMenuDelete',
         'roles' => ['Manager', 'Admin']
     ]);
 });

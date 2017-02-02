@@ -192,6 +192,63 @@ class AdminController extends Controller
         return redirect()->route('admin.checkoutList');
     }
 
+    # 카테고리 관리
+    public function getCategoryList()
+    {
+        $categories = Category::orderBy('id', 'desc')->paginate(15);
+        return view('admin.category-list', ['categories' => $categories]);
+    }
+
+    public function getCategoryShow($id)
+    {
+        $category = Category::find($id);
+        return view('admin.category-show', ['category' => $category]);
+    }
+
+    public function getCategoryForm($id = 0)
+    {
+        $category = Category::find($id);
+
+        return view('admin.category-form', ['category' => $category]);
+    }
+
+    public function postCategoryCreate(Request $request)
+    {
+        $this->validate($request, [
+            'title' => 'required',
+        ]);
+
+        $category = Category::Create([
+            'title' => $request->title,
+        ]);
+        $category->category = $category->id;
+        $category->save();
+
+        return redirect()->route('admin.categoryShow', $category->id);
+    }
+
+    public function postCategoryUpdate(Request $request, $id)
+    {
+        $this->validate($request, [
+            'title' => 'required',
+        ]);
+
+        $category = Category::find($id);
+        $category->title = $request->title;
+        $category->save();
+
+        return redirect()->route('admin.categoryShow', $id);
+    }
+
+    public function getCategoryDelete($id)
+    {
+        Menu::where('category', '=', $id)->update(['category' => 0]);
+        Category::destroy($id);
+
+        return redirect()->route('admin.categoryList');
+    }
+
+    # 메뉴 관리
     public function getMenuList()
     {
         $menus = Menu::orderBy('id', 'desc')->paginate(15);
