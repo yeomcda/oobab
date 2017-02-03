@@ -7,6 +7,7 @@
 @section('content')
     <nav class="navbar navbar-default">
         <ul class="nav nav-pills">
+                <li role="presentation" class="{{ $select_category == 0 ? "active" : "" }}"><a href="{{ route('menu.index') }}">전체</a></li>
             @foreach($categories as $category)
                 <li role="presentation" class="{{ $category->category == $select_category ? "active" : "" }}"><a href="{{ route('menu.index').'/'.$category->category }}">{{$category->title}}</a></li>
             @endforeach
