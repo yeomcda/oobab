@@ -130,7 +130,7 @@ class AdminController extends Controller
             $user_id = $order->user_id;
             if(User::find($user_id)->hasRole("Manager"))
             {
-                $checkoutOrders = Order::select('pay_id')->where('make_checkout_id', '=', $makeCheckoutID)->groupBy('pay_id')->get();
+                $checkoutOrders = Order::select('pay_id')->where('make_checkout_id', '=', $makeCheckoutID)->where('pay_id', '<>', 0)->groupBy('pay_id')->get();
                 foreach ($checkoutOrders as $checkoutOrder)
                 {
                     $pay = $checkoutOrder->pay;
