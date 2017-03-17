@@ -17,7 +17,7 @@ class DashboardController extends Controller
             ->where('checkout_id', '=', 0)
             ->first();
 
-        $checkouts = Auth::user()
+        /*$checkouts = Auth::user()
             ->checkouts()
             ->get();
 
@@ -54,8 +54,8 @@ class DashboardController extends Controller
             ->labels($labels)
             ->values($priceData)
             ->dimensions(0,400)
-            ->oneColor(true);
+            ->oneColor(true);*/
 
-        return view('dashboard.index', ['notCheckoutOrders'=>$notCheckoutOrders, 'checkoutChart'=>$checkoutChart, 'orderChart'=>$orderChart]);
+        return view('dashboard.index', ['notCheckoutOrders'=>$notCheckoutOrders/*, 'checkoutChart'=>$checkoutChart, 'orderChart'=>$orderChart*/]);
     }
 }
