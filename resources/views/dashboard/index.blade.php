@@ -15,6 +15,6 @@
             </div>
         </a>
     @endif
-    {{--{!! $checkoutChart->render() !!}
-    {!! $orderChart->render() !!}--}}
+    {!! $checkoutChart->render() !!}
+    {!! $orderChart->render() !!}
 @endsection
