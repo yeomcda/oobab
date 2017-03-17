@@ -39,6 +39,10 @@ class User extends Authenticatable
         return $this->hasMany('App\Pay');
     }
 
+    public function checkouts() {
+        return $this->hasMany('App\Checkout');
+    }
+
     public function hasAnyRole($roles)
     {
         if(is_array($roles))

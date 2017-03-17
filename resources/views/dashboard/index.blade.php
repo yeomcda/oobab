@@ -15,4 +15,6 @@
             </div>
         </a>
     @endif
+    {!! $checkoutChart->render() !!}
+    {!! $orderChart->render() !!}
 @endsection

@@ -77,7 +77,8 @@ class CheckoutController extends Controller
     {
         $orders = Auth::user()
             ->orders()
-            ->where('make_checkout_id', '=', $make_checkout_id);
+            ->where('make_checkout_id', '=', $make_checkout_id)
+            ->get();
 
         $checkOut = new Checkout();
         $checkOut->save();
