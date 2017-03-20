@@ -43,6 +43,10 @@ class User extends Authenticatable
         return $this->hasMany('App\Checkout');
     }
 
+    public function bookmarks() {
+        return $this->hasMany('App\Bookmark');
+    }
+
     public function hasAnyRole($roles)
     {
         if(is_array($roles))

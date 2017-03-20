@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Menu;
 use ConsoleTVs\Charts\Facades\Charts;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -17,6 +18,7 @@ class DashboardController extends Controller
             ->where('checkout_id', '=', 0)
             ->first();
 
+        # 정산 차트.
         $checkouts = Auth::user()
             ->checkouts()
             ->get();
@@ -34,6 +36,7 @@ class DashboardController extends Controller
             ->values($priceData)
             ->dimensions(0,400);
 
+        # 미정산 내역 차트.
         $orders = Auth::user()
             ->orders()
             ->where('make_checkout_id', '=', 0)
@@ -56,6 +59,19 @@ class DashboardController extends Controller
             ->dimensions(0,400)
             ->oneColor(true);
 
-        return view('dashboard.index', ['notCheckoutOrders'=>$notCheckoutOrders, 'checkoutChart'=>$checkoutChart, 'orderChart'=>$orderChart]);
+        # 즐겨찾는 메뉴.
+        $bookmarks = Auth::user()->bookmarks()->get();
+        $bookmarkMenuIDs = [];
+        foreach ($bookmarks as $bookmark)
+        {
+            array_push($bookmarkMenuIDs, $bookmark->menu_id);
+        }
+        $bookmarkMenus = Menu::find($bookmarkMenuIDs);
+        foreach($bookmarkMenus as $bookmarkMenu)
+        {
+            $bookmarkMenu["isBookmark"] = true;
+        }
+
+        return view('dashboard.index', ['notCheckoutOrders'=>$notCheckoutOrders, 'checkoutChart'=>$checkoutChart, 'orderChart'=>$orderChart, 'bookmarkMenus'=>$bookmarkMenus]);
     }
 }

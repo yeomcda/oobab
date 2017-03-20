@@ -26,7 +26,22 @@
                             </div>
                             <div class="clearfix">
                                 <div class="pull-left price">{{ $menu->price }} 원</div>
-                                <a href="{{ route('cart.addItem', ['id'=>$menu->id]) }}" class="btn btn-warning pull-right" role="button">담기</a>
+                                <div class="pull-right">
+                                    @php
+                                        if($menu["isBookmark"])
+                                        {
+                                            $linkUrl = route('menu.deleteBookmark', ['id'=>$menu->id]);
+                                            $bookmarkClassName = "fa-star";
+                                        }
+                                        else
+                                        {
+                                            $linkUrl = route('menu.addBookmark', ['id'=>$menu->id]);
+                                            $bookmarkClassName = "fa-star-o";
+                                        }
+                                    @endphp
+                                    <a href="{{$linkUrl}}"><i class="fa fa-lg {{$bookmarkClassName}}" aria-hidden="true" style="color: #f0ad4e;"></i></a>
+                                    <a href="{{ route('cart.addItem', ['id'=>$menu->id]) }}" class="btn btn-warning " role="button">담기</a>
+                                </div>
                             </div>
                         </div>
                     </div>

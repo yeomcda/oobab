@@ -7,8 +7,8 @@ use App\Menu;
 use App\OptionMenu;
 use App\Order;
 use Illuminate\Http\Request;
-use Auth;
-use Session;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 
 class ShoppingCartController extends Controller
 {

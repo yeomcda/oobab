@@ -59,6 +59,16 @@ Route::get('/menu/{id?}', [
     'as' => 'menu.index'
 ]);
 
+Route::get('/menu/add-bookmark/{id}', [
+    'uses' => 'MenuController@getBookmarkAdd',
+    'as' => 'menu.addBookmark'
+]);
+
+Route::get('/menu/delete-bookmark/{id}', [
+    'uses' => 'MenuController@getBookmarkDelete',
+    'as' => 'menu.deleteBookmark'
+]);
+
 Route::group(['prefix' => 'cart', 'as' => 'cart.'], function(){
     Route::get('/list', [
         'uses' => 'ShoppingCartController@getCart',

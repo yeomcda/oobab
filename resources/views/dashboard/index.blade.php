@@ -15,6 +15,79 @@
             </div>
         </a>
     @endif
+
+    <!-- 즐겨찾기 메뉴 표시. -->
+    <div class="row">
+        @if(!($bookmarkMenus->isEmpty()))
+            <h4>즐겨찾는 메뉴</h4>
+        @endif
+        <ul id="lightSlider">
+            @foreach($bookmarkMenus as $menu)
+                <li>
+                    <div class="thumbnail">
+                        <img src="{{ $menu->imagePath }}" alt="...">
+                        <div class="caption">
+                            <div class="thumb-menu-title">
+                                <p>{{ $menu->title }}</p>
+                            </div>
+                            <div class="clearfix">
+                                <div class="pull-left price">{{ $menu->price }} 원</div>
+                                <div class="pull-right">
+                                    @php
+                                        if($menu["isBookmark"])
+                                        {
+                                            $linkUrl = route('menu.deleteBookmark', ['id'=>$menu->id]);
+                                            $bookmarkClassName = "fa-star";
+                                        }
+                                        else
+                                        {
+                                            $linkUrl = route('menu.addBookmark', ['id'=>$menu->id]);
+                                            $bookmarkClassName = "fa-star-o";
+                                        }
+                                    @endphp
+                                    <a href="{{$linkUrl}}"><i class="fa fa-lg {{$bookmarkClassName}}" aria-hidden="true" style="color: #f0ad4e;"></i></a>
+                                    <a href="{{ route('cart.addItem', ['id'=>$menu->id]) }}" class="btn btn-warning " role="button">담기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            @endforeach
+        </ul>
+        <div class="lSAction"><a class="lSPrev"></a><a class="lSNext"></a></div>
+    </div>
+
+    <!-- 정산, 미청구 주문 차트 표시. -->
     {!! $checkoutChart->render() !!}
     {!! $orderChart->render() !!}
+
+    <!-- javascript -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#lightSlider").lightSlider(
+                {
+                    item:5,
+                    slideMove:5,
+                    speed:600,
+                    responsive : [
+                        {
+                            breakpoint:800,
+                            settings: {
+                                item:3,
+                                slideMove:1,
+                                slideMargin:6
+                            }
+                        },
+                        {
+                            breakpoint:480,
+                            settings: {
+                                item:2,
+                                slideMove:1
+                            }
+                        }
+                    ]
+                }
+            );
+        });
+    </script>
 @endsection
