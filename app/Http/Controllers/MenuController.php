@@ -17,7 +17,9 @@ class MenuController extends Controller
             $menus = Category::find($category)->menus;
 
         # 즐겨찾기 메뉴인지 상태 추가.
-        $bookmarks = Auth::user()->bookmarks()->get();
+        $bookmarks = [];
+        if(!is_null(Auth::user()))
+            $bookmarks = Auth::user()->bookmarks()->get();
         $bookmarkMenuIDs = [];
         foreach ($bookmarks as $bookmark)
         {
@@ -39,7 +41,7 @@ class MenuController extends Controller
 
     public function getBookmarkAdd($id)
     {
-        Bookmark::Create([
+        Bookmark::firstOrCreate([
             'user_id' => Auth::user()->id,
             'menu_id' => $id,
         ]);

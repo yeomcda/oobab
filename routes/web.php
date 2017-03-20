@@ -61,12 +61,14 @@ Route::get('/menu/{id?}', [
 
 Route::get('/menu/add-bookmark/{id}', [
     'uses' => 'MenuController@getBookmarkAdd',
-    'as' => 'menu.addBookmark'
+    'as' => 'menu.addBookmark',
+    'middleware' => 'auth'
 ]);
 
 Route::get('/menu/delete-bookmark/{id}', [
     'uses' => 'MenuController@getBookmarkDelete',
-    'as' => 'menu.deleteBookmark'
+    'as' => 'menu.deleteBookmark',
+    'middleware' => 'auth'
 ]);
 
 Route::group(['prefix' => 'cart', 'as' => 'cart.'], function(){
