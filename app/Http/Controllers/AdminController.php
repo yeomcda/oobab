@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Bookmark;
 use App\Category;
 use App\MakeCheckout;
 use App\Menu;
@@ -350,6 +351,7 @@ class AdminController extends Controller
     public function getMenuDelete($id)
     {
         MenuOptionMenu::where('menu_id', '=', $id)->delete();
+        Bookmark::where('menu_id', '=', $id)->delete();
         Menu::destroy($id);
 
         return redirect()->route('admin.menuList');
