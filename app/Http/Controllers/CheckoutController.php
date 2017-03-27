@@ -81,9 +81,14 @@ class CheckoutController extends Controller
             ->get();
 
         $checkOut = new Checkout();
+        $checkOut->user_id = Auth::user()->id;
+        $checkOut->total_price = $orders->sum('total_price');;
         $checkOut->save();
 
-        $orders->update(['checkout_id' => $checkOut->id]);
+        foreach($orders as $order)
+        {
+            $order->update(['checkout_id' => $checkOut->id]);
+        }
 
         return redirect()->route('checkout.index');
     }
