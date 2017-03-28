@@ -145,6 +145,12 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth', 'r
         'roles' => ['Manager', 'Admin']
     ]);
 
+    Route::get('/order/delete/{id}', [
+        'uses' => 'AdminController@getOrderDelete',
+        'as' => 'orderDelete',
+        'roles' => ['Manager', 'Admin']
+    ]);
+
     Route::get('/checkout/list', [
         'uses' => 'AdminController@getCheckoutList',
         'as' => 'checkoutList',

@@ -90,6 +90,13 @@ class AdminController extends Controller
         return redirect()->route("admin.orderList");
     }
 
+    public function getOrderDelete($id){
+        $order = Order::find($id);
+        $order->delete();
+
+        return redirect()->back();
+    }
+
     public function getCheckoutList()
     {
         $checkoutLists = MakeCheckout::orderBy('created_at', 'desc')->paginate(15);

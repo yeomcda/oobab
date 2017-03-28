@@ -11,7 +11,9 @@
             <p class="pull-right">{{$date}}</p>
             <hr>
             @foreach($orders as $order)
-                <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> {{ $order->username }}</p>
+                <p><i class="fa fa-user-circle-o" aria-hidden="true"></i> {{ $order->username }}
+                    <a href="{{route("admin.orderDelete", ["id"=>$order->id])}}" class="btn btn-danger pull-right">취소</a>
+                </p>
                 <ul class="list-group">
                     @foreach($order->cart->items as $product)
                         <li class="list-group-item">
