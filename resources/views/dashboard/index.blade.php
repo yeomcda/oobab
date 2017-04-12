@@ -54,7 +54,6 @@
                 </li>
             @endforeach
         </ul>
-        <div class="lSAction"><a class="lSPrev"></a><a class="lSNext"></a></div>
     </div>
 
     <!-- 정산, 미청구 주문 차트 표시. -->
