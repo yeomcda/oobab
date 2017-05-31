@@ -12,7 +12,7 @@ class MenuController extends Controller
     public function getIndex($category = 0){
         $categories = Category::all();
         if($category == 0)
-            $menus = Menu::all();
+            $menus = Menu::orderBy('category')->get();
         else
             $menus = Category::find($category)->menus;
 
