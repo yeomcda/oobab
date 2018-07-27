@@ -29,7 +29,7 @@
                                             @endforeach
                                         </ul>
                                     @else
-                                        <button type="button" class="btn btn-default btn-sm disabled">옵션 <i class="fa fa-times" aria-hidden="true"></i></button>
+                                        <button type="button" class="btn btn-default btn-sm disabled">추가 옵션 <i class="fa fa-times" aria-hidden="true"></i></button>
                                     @endif
                                 </div>
                                 <div class="input-group-btn">
