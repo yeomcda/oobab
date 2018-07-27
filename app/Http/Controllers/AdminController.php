@@ -92,6 +92,19 @@ class AdminController extends Controller
 
     public function getOrderDelete($id){
         $order = Order::find($id);
+        $payID = $order->pay_id;
+        $orderTotalPrice = $order->total_price;
+        if (0 < $payID) {
+            $pay = Pay::find($payID);
+            $updateTotalPrice = $pay->total_price - $orderTotalPrice;
+            if (0 == $updateTotalPrice) {
+                $pay->delete();
+                return redirect()->route("admin.orderList");
+            } else {
+                $pay->total_price = $updateTotalPrice;
+                $pay->save();
+            }
+        }
         $order->delete();
 
         return redirect()->back();
