@@ -22,7 +22,7 @@
 
                                 <div class="input-group-btn">
                                     @if( !$product['item']['option_menus']->isEmpty() )
-                                        <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">옵션 <span class="caret"></span></button>
+                                        <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">추가 옵션 <span class="caret"></span></button>
                                         <ul class="dropdown-menu">
                                             @foreach($product['item']['option_menus'] as $optionItem)
                                                 <li><a href="{{ Route('cart.addOptionItem', ['menu_id' => $product['item']['id'], 'option_id' => $optionItem['id']]) }}">{{$optionItem->title}} <span class="label label-primary">{{$optionItem->price}}</span></a></li>
