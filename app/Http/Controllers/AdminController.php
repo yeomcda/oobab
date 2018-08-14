@@ -99,6 +99,7 @@ class AdminController extends Controller
             $updateTotalPrice = $pay->total_price - $orderTotalPrice;
             if (0 == $updateTotalPrice) {
                 $pay->delete();
+                $order->delete();
                 return redirect()->route("admin.orderList");
             } else {
                 $pay->total_price = $updateTotalPrice;
