@@ -17,14 +17,14 @@
                     <div class="list-group">
                         @foreach($categories as $category)
                             <div class="input-group">
-                            <a href="{{ route('admin.categoryShow', ['id' => $category->id]) }}" class="list-group-item btn-default">
-                                {{ $category->id }})
-                                {{ $category->title }}
-                                <div class="pull-right">{{ $category->updated_at->format('y/m/d H:i:s') }}</div>
-                            </a>
-                            <div class="input-group-btn">
-                                <a href="{{ Route('admin.categoryDelete', ['id' => $category->id]) }}" class="btn btn-danger btn-sm">삭제</a>
-                            </div>
+                                <a href="{{ route('admin.categoryShow', ['id' => $category->id]) }}" class="list-group-item btn-default">
+                                    {{ $category->id }})
+                                    {{ $category->title }}
+                                    <div class="pull-right">{{ $category->updated_at->format('y/m/d H:i:s') }}</div>
+                                </a>
+                                <div class="input-group-btn">
+                                    <a href="{{ Route('admin.categoryDelete', ['id' => $category->id]) }}" class="btn btn-danger btn-sm">삭제</a>
+                                </div>
                             </div>
                         @endforeach
                     </div>

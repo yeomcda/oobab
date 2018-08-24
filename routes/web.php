@@ -51,6 +51,11 @@ Route::group(['prefix' => 'user', 'as' => 'user.'], function(){
             'uses' => 'UserController@getProfile',
             'as' => 'profile'
         ]);
+
+        Route::post('/profile/update', [
+            'uses' => 'UserController@postProfileUpdate',
+            'as' => 'profileUpdate'
+        ]);
     });
 });
 
@@ -127,6 +132,24 @@ Route::group(['prefix' => 'order', 'as' => 'order.', 'middleware' => 'auth'], fu
 });
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth', 'roles']], function(){
+    Route::get('/user/list', [
+        'uses' => 'AdminController@getUserList',
+        'as' => 'userList',
+        'roles' => ['Admin']
+    ]);
+
+    Route::get('/user/edit/{id}', [
+        'uses' => 'AdminController@getUserForm',
+        'as' => 'userEdit',
+        'roles' => ['Admin']
+    ]);
+
+    Route::post('/user/update/{id}', [
+        'uses' => 'AdminController@postUserUpdate',
+        'as' => 'userUpdate',
+        'roles' => ['Admin']
+    ]);
+
     Route::get('/order/list', [
         'uses' => 'AdminController@getOrderList',
         'as' => 'orderList',

@@ -71,6 +71,40 @@ class UserController extends Controller
     }
 
     public function getProfile() {
-        return view('user.profile');
+        $user = Auth::user();
+
+        return view('user.profile', ['user' => $user]);
+    }
+
+    public function postProfileUpdate(Request $request) {
+        $user = Auth::user();
+        $requestEmail = $request->input('email');
+        if ($user->email != $requestEmail) {
+            $emailValidate = "email|required|unique:users";
+        } else {
+            $emailValidate = "email|required";
+        }
+
+        if($request->input('password') != "") {
+            $passwordValidate = "required|min:4";
+        } else {
+            $passwordValidate = "";
+        }
+
+        $this->validate($request, [
+            'username' => 'required',
+            'email' => $emailValidate,
+            'password' => $passwordValidate,
+        ]);
+
+        $user->username = $request->input('username');
+        $user->email = $request->input('email');
+        if($request->input('password') != "") {
+            $user->password = bcrypt($request->input('password'));
+        }
+        $user->save();
+
+        Auth::logout();
+        return redirect()->route('dashboard.index');
     }
 }

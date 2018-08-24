@@ -10,6 +10,7 @@ use App\MenuOptionMenu;
 use App\OptionMenu;
 use App\Order;
 use App\Pay;
+use App\Role;
 use App\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -17,6 +18,56 @@ use Illuminate\Support\Facades\DB;
 
 class AdminController extends Controller
 {
+    public function getUserList(){
+        $users = User::orderBy('id', 'desc')->paginate(15);
+
+        return view('admin.user-list', ['users' => $users]);
+    }
+
+    public function getUserForm($id){
+        $user = User::find($id);
+        $roles = Role::all();
+        $roleSelectBox = array();
+        foreach ($roles as $role)
+        {
+            $roleSelectBox[$role->id] = $role->name;
+        }
+
+        return view('admin.user-form', ['user' => $user, 'roleSelectBox' => $roleSelectBox]);
+    }
+
+    public function postUserUpdate(Request $request, $id){
+        $user = User::find($id);
+        $requestEmail = $request->input('email');
+        if ($user->email != $requestEmail) {
+            $emailValidate = "email|required|unique:users";
+        } else {
+            $emailValidate = "email|required";
+        }
+
+        if($request->input('password') != "") {
+            $passwordValidate = "required|min:4";
+        } else {
+            $passwordValidate = "";
+        }
+
+        $this->validate($request, [
+            'username' => 'required',
+            'email' => $emailValidate,
+            'password' => $passwordValidate,
+        ]);
+
+        $user->username = $request->input('username');
+        $user->email = $request->input('email');
+        if($request->input('password') != "") {
+            $user->password = bcrypt($request->input('password'));
+        }
+        $user->save();
+        $user->roles()->sync([$request->input('role')]);
+
+        return redirect()->route('admin.userList');
+    }
+
     public function getOrderList(){
         $pays = Pay::orderBy('created_at', 'desc')->paginate(15);
 
