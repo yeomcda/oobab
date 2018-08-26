@@ -36,7 +36,6 @@
                             <li role="separator" class="divider"></li>
                             @if(Auth::user()->hasAnyRole(['Manager','Admin']))
                                 <li class="dropdown-header list-group-item-danger">관리자 전용</li>
-                                <li><a href="{{ route('admin.userList') }}">계정 관리</a></li>
                                 <li><a href="{{ route('admin.orderShow') }}">오늘의 주문</a></li>
                                 <li><a href="{{ route('admin.orderList') }}">주문 내역</a></li>
                                 @if(Auth::user()->hasAnyRole(['Admin']))
@@ -44,6 +43,7 @@
                                     <li><a href="{{ route('admin.checkoutList') }}">정산 내역</a></li>
                                 @endif
                                 <li><a href="{{ route('admin.menuList') }}">메뉴 관리</a></li>
+                                <li><a href="{{ route('admin.userList') }}">계정 관리</a></li>
                                 <li role="separator" class="divider"></li>
                             @endif
                             <li><a href="{{ route('user.logout') }}">로그아웃</a></li>
