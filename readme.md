@@ -1,27 +1,26 @@
-# Laravel PHP Framework
+# 우주 주문시스템(OoBab)
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+점심 한솥도시락 주문 시스템.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+[데모 사이트](https://)
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
 
-## Official Documentation
+## 개요
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+본 프로젝트는 PHP 웹 프레임워크인 Laravel을 학습하기 위한 요지로 시작되었다.
 
-## Contributing
+세부기능으로는 크게 사용자 인증(로그인), 메뉴 주문, 관리자 정산이 있으며, 추가적으로 사용자 주문 패턴을 분석한 메뉴 추천이나 기타 필요 기능을 구현해보려고 한다.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+## 개발 환경
 
-## Security Vulnerabilities
+- Centos 6.5
+- Php 5.6
+- Laravel 5.3
+- Apache 웹 서버
+- Mysql 5.6
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+## 요구 기능
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+- 유저 기능: 가입, 로그인, 메뉴 주문, 주문 히스토리, 입금 완료
+- 관리자 기능: 유저 관리, 메뉴 추가, 정산
+- 기타 기능: 주문 패턴 분석 및 메뉴추천
